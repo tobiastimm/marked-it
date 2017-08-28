@@ -1,0 +1,106 @@
+{
+  "name": "marked-it",
+  "version": "0.1.0",
+  "description": "Marked it! - Bookmark Manager for Google Chrome",
+  "main": "index.js",
+  "author": "Tobias Timm <tbs.timm@gmail.com>",
+  "license": "MIT",
+  "browserslist": [
+    ">1%",
+    "last 4 versions",
+    "Firefox ESR",
+    "not ie < 9"
+  ],
+  "scripts": {
+    "start": "webpack --config ./config/webpack.dev --watch"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ],
+      "stage-2"
+    ],
+    "env": {
+      "test": {
+        "plugins": [
+          "istanbul",
+          "rewire"
+        ]
+      }
+    }
+  },
+  "devDependencies": {
+    "@storybook/addon-info": "^3.2.9",
+    "@storybook/addon-storyshots": "^3.2.8",
+    "@storybook/react": "^3.2.8",
+    "autoprefixer": "^7.1.2",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^20.0.3",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-istanbul": "^4.1.4",
+    "babel-plugin-transform-react-jsx-self": "^6.22.0",
+    "babel-plugin-transform-react-jsx-source": "^6.22.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-app": "^3.0.2",
+    "babel-preset-react-optimize": "^1.0.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "babel-runtime": "^6.26.0",
+    "case-sensitive-paths-webpack-plugin": "^2.1.1",
+    "chalk": "^2.1.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.5",
+    "dotenv": "^4.0.0",
+    "enzyme": "^2.9.1",
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-flowtype": "^2.35.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-prettier": "^2.2.0",
+    "eslint-plugin-react": "^7.3.0",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "flow-bin": "^0.53.1",
+    "html-webpack-plugin": "^2.30.1",
+    "jest": "^20.0.4",
+    "jest-enzyme": "^3.8.0",
+    "object-assign": "^4.1.1",
+    "postcss-flexbugs-fixes": "^3.2.0",
+    "postcss-loader": "^2.0.6",
+    "prettier": "^1.5.3",
+    "prettier-eslint-cli": "^4.2.1",
+    "promise": "^8.0.1",
+    "react-hot-loader": "^1.3.1",
+    "react-test-renderer": "^15.6.1",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1",
+    "webpack-hot-middleware": "^2.18.2",
+    "webpack-manifest-plugin": "^1.3.1",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.6",
+    "recompose": "^0.25.0",
+    "redux": "^3.7.2",
+    "redux-async-initial-state": "^0.2.1"
+  }
+}

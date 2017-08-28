@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Marked it! - Bookmark Manager for Google Chrome",
+  "description": "An easy way to organize your bookmarks without breaking your privacy!",
+  "version": "0.1.0",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "background": {
+    "scripts": ["main.js"]
+  },
+  "permissions": ["bookmarks", "storage"]
+}

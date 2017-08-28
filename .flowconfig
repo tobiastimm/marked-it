@@ -1,0 +1,38 @@
+[ignore]
+
+[options]
+# Ignore flow warning about not supporting decorator types fully yet.
+esproposal.decorators=ignore
+esproposal.class_static_fields=enable
+esproposal.class_instance_fields=enable
+module.system.node.resolve_dirname=node_modules
+module.system.node.resolve_dirname=.
+munge_underscores=true
+module.use_strict=true
+
+suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe
+suppress_type=$FlowFixMe
+suppress_type=$FlowTODO
+
+
+##
+# Maps all imports of these types to the npm package `empty`.
+# They will resolve as empty JS objects.
+# This is necessary because flow tries to resolve all imports and
+# these non-standard imports can't be parsed.
+##
+module.name_mapper='.*\(.css\|.png\)' -> 'empty/object'
+
+# Map webpack resolved module imports to the app directory
+# Example: components/Foo -> `<project_root>/app/components/Foo`
+module.name_mapper='^actions\/\(.*\)$' -> '<PROJECT_ROOT>/actions/\1'
+module.name_mapper='^api\/\(.*\)$' -> '<PROJECT_ROOT>/api/\1'
+module.name_mapper='^components\/\(.*\)$' -> '<PROJECT_ROOT>/components/\1'
+module.name_mapper='^constants\/\(.*\)$' -> '<PROJECT_ROOT>/constants/\1'
+module.name_mapper='^containers\/\(.*\)$' -> '<PROJECT_ROOT>/layouts//\1'
+module.name_mapper='^models\/\(.*\)$' -> '<PROJECT_ROOT>/models/\1'
+module.name_mapper='^reducers\/\(.*\)$' -> '<PROJECT_ROOT>/reducers/\1'
+module.name_mapper='^selectors\/\(.*\)$' -> '<PROJECT_ROOT>/selectors/\1'
+module.name_mapper='^store\/\(.*\)$' -> '<PROJECT_ROOT>/store/\1'
+module.name_mapper='^utils\/\(.*\)$' -> '<PROJECT_ROOT>/utils/\1'
+module.name_mapper='^assets\/\(.*\)$' -> '<PROJECT_ROOT>/assets/\1'
