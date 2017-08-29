@@ -1,10 +1,7 @@
 import React from 'react';
 import BookmarksContainer from './containers/BookmarksContainer';
+import Layout from './layouts/App';
 
-const App = () =>
-  <div>
-    <h2>New Chrome Extension!</h2>
-    <BookmarksContainer />
-  </div>;
+const App = () => <Layout />;
 
 export default App;
