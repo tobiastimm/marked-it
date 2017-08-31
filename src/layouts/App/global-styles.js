@@ -1,6 +1,6 @@
 import { injectGlobal } from 'styled-components';
-import { grey } from 'material-ui/colors';
 import 'typeface-roboto';
+import Theme from './theme';
 
 /* eslint no-unused-expressions: 0 */
 injectGlobal`
@@ -12,7 +12,7 @@ injectGlobal`
   }
 
  body {
-    background-color: ${grey[900]};
+    background-color: ${Theme.palette.background.contentFrame};
     font-family: Roboto, Helvetica, Arial, sans-serif;
   }
 

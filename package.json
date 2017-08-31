@@ -12,9 +12,10 @@
     "not ie < 9"
   ],
   "scripts": {
-    "start": "webpack --config ./config/webpack.dev --watch",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "start": "cross-env NODE_PATH=src/ webpack --config ./config/webpack.dev --watch",
+    "storybook": "cross-env NODE_PATH=src/ start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "test": "cross-env NODE_PATH=src/ node scripts/test.js --env=jsdom"
   },
   "babel": {
     "presets": [
@@ -36,6 +37,39 @@
         ]
       }
     }
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}"
+    ],
+    "setupFiles": [
+      "<rootDir>/config/polyfills.js"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/?(*.)(spec|test).js?(x)",
+      "<rootDir>/src/**/?(*.)(spec|test).js?(x)"
+    ],
+    "testEnvironment": "node",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
+    ],
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web"
+    },
+    "moduleFileExtensions": [
+      "web.js",
+      "js",
+      "json",
+      "web.jsx",
+      "jsx",
+      "node"
+    ]
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.6",
@@ -100,6 +134,7 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "cross-env": "^5.0.5",
     "material-design-icons": "^3.0.1",
     "material-ui": "next",
     "material-ui-icons": "^1.0.0-beta.5",

@@ -4,7 +4,7 @@ import { ListItem, ListItemText } from 'material-ui/List';
 import styled from 'styled-components';
 
 const Bookmark = ({ id, title, url }) =>
-  <ListItem dense>
+  <ListItem button>
     <ListItemText primary={title} secondary={url} />
   </ListItem>;
 

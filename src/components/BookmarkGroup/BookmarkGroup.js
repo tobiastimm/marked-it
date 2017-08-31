@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import List, { ListSubheader } from 'material-ui/List';
-import Typography from 'material-ui/Typography';
 import styled from 'styled-components';
+import { rem } from 'polished';
+import List, { ListSubheader, ListItemText } from 'material-ui/List';
+import { withTheme } from 'material-ui/styles';
 
-import Theme from 'layouts/App/theme';
 import BookmarkEntry from '../BookmarkEntry';
 
-const Wrapper = styled.div`
-  width: '100%';
-  maxWidth: 360;
-  background: ${Theme.palette.background.paper};
-`;
+const Wrapper = withTheme(styled.div`
+  width: 100%;
+  max-width: ${rem('360px')};
+  background: ${props => props.theme.palette.background.paper};
+`);
 
 const EntryList = styled(List)`
 
@@ -20,7 +20,6 @@ const EntryList = styled(List)`
 const BookmarkGroup = ({ id, title, children }) =>
   <Wrapper>
     <EntryList
-      dense
       subheader={
         <ListSubheader>
           {title}

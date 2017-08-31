@@ -18,13 +18,17 @@ module.exports = {
   output: {
     publicPath: '/',
     path: path.resolve('public'),
+    pathinfo: true,
     filename: '[name].js',
     chunkFilename: '[name].chunk.js',
     devtoolModuleFilenameTemplate: info =>
       path.resolve(info.absoluteResourcePath).replace(/\\/g, '/')
   },
   resolve: {
-    modules: ['node_modules', path.join(process.cwd(), 'src')],
+    modules: [
+      'node_modules',
+      path.resolve(path.join(process.cwd(), 'node_modules'))
+    ].concat(process.env.NODE_PATH.split(path.delimiter).filter(Boolean)),
     extensions: ['.web.js', '.js', '.json', '.web.jsx', '.jsx'],
     alias: {
       'react-native': 'react-native-web'
@@ -70,10 +74,7 @@ module.exports = {
                     'react'
                   ],
                   plugins: [
-                    [
-                      'transform-react-jsx-source',
-                      'transform-react-jsx-self'
-                    ]
+                    ['transform-react-jsx-source', 'transform-react-jsx-self']
                   ]
                 }
               }
