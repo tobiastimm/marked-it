@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import BookmarkGroup from '../BookmarkGroup';
+import BookmarkFolder from '../BookmarkFolder';
 import Bookmark from '../Bookmark';
 
 const BookmarkEntry = props => {
   if (props.children) {
-    return <BookmarkGroup {...props} />;
+    return <BookmarkFolder {...props} />;
   }
   return <Bookmark {...props} />;
 };

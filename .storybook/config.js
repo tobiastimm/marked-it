@@ -1,7 +1,7 @@
 import { configure } from "@storybook/react";
 
 function loadStories() {
-  require("../src/stories/BookmarkGroup");
+  require("../src/stories/BookmarkFolder");
   require("../src/stories/Bookmark");
 }
 

@@ -2,21 +2,21 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { MuiThemeProvider } from 'material-ui/styles';
-import 'sanitize.css';
+import { withTheme } from 'material-ui/styles';
 
 import Content from './Content';
 import Theme from './theme';
-import './global-styles';
+import GlobalStyles from './GlobalStyles';
 
-const Wrapper = styled.div`
-    width: '100%',
-    maxWidth: 360,
-    background:
-`;
+const Wrapper = withTheme(styled.div`
+  height: 100%;
+  width: 100%;
+`);
 
 const Layout = ({ children }) =>
   <MuiThemeProvider theme={Theme}>
     <Wrapper>
+      <GlobalStyles />
       <Content>
         {children}
       </Content>
