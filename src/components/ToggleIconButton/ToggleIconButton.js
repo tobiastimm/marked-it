@@ -12,8 +12,8 @@ const ToggleIconButton = ({ toggle, onIcon, offIcon, onClick }) =>
 
 ToggleIconButton.propTypes = {
   toggle: PropTypes.bool.isRequired,
-  onIcon: PropTypes.element.isRequired,
-  offIcon: PropTypes.element.isRequired,
+  onIcon: PropTypes.func.isRequired,
+  offIcon: PropTypes.func.isRequired,
   onClick: PropTypes.func
 };
 

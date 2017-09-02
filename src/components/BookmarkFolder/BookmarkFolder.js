@@ -15,6 +15,8 @@ import FolderIcon from 'material-ui-icons/Folder';
 import FolderOpenIcon from 'material-ui-icons/FolderOpen';
 import KeyBoardArrowDown from 'material-ui-icons/KeyboardArrowDown';
 import KeyBoardArrowUp from 'material-ui-icons/KeyboardArrowUp';
+import DeleteIcon from 'material-ui-icons/Delete';
+import IconButton from 'material-ui/IconButton';
 
 import BookmarkEntry from '../BookmarkEntry';
 
@@ -39,7 +41,7 @@ const BookmarkFolder = enhance(
     const toggleExpand = () => (expand ? showLess() : showMore());
     return (
       <Wrapper>
-        <ListItem dense={false} disableGutters={false} button>
+        <ListItem dense={false} disableGutters={false}>
           <Avatar>
             <ToggleIconButton
               onIcon={FolderOpenIcon}
@@ -48,15 +50,15 @@ const BookmarkFolder = enhance(
             />
           </Avatar>
           <ListItemText primary={title} />
-          {!!children.length &&
-            <ListItemSecondaryAction>
+          <ListItemSecondaryAction>
+            {!!children.length &&
               <ToggleIconButton
                 onClick={toggleExpand}
                 onIcon={KeyBoardArrowUp}
                 offIcon={KeyBoardArrowDown}
                 toggle={expand}
-              />
-            </ListItemSecondaryAction>}
+              />}
+          </ListItemSecondaryAction>
         </ListItem>
         {!!children.length &&
           <Collapse in={expand} transitionDuration={'auto'} unmountOnExit>
