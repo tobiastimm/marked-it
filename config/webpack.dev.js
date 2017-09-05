@@ -10,6 +10,7 @@ module.exports = {
   name: 'marked-it',
   target: 'web',
   entry: [
+    require.resolve('whatwg-fetch'),
     require.resolve('babel-polyfill'),
     require.resolve('../src/index.js')
   ],

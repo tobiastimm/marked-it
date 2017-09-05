@@ -7,7 +7,16 @@ import {
 } from 'material-ui/List';
 import styled from 'styled-components';
 import { withTheme } from 'material-ui/styles';
+import { rem } from 'polished';
+import Avatar from 'material-ui/Avatar';
 import BookmarkActions from '../BookmarkActions';
+import { getFavicon } from 'api/faviconApi';
+
+// TODO implement caching
+const Favicon = styled(Avatar)`
+  width: ${rem('16px')}!important;
+  height: ${rem('16px')}!important;
+`;
 
 const BookmarkLink = withTheme(styled.a`
   color: ${props => props.theme.palette.text.secondary};
@@ -20,6 +29,7 @@ const BookmarkLink = withTheme(styled.a`
 
 const Bookmark = ({ id, title, url, actions }) =>
   <ListItem>
+    <Favicon src={getFavicon(url)} imgProps={{ width: 16, height: 16 }} />
     <ListItemText
       primary={title}
       secondary={

@@ -9,5 +9,7 @@
   "background": {
     "scripts": ["main.js"]
   },
-  "permissions": ["bookmarks", "storage"]
+  "permissions": [
+    "https://www.google.com/*",
+    "bookmarks", "storage"]
 }

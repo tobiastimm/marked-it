@@ -1,14 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import List, { ListSubheader } from 'material-ui/List';
-import styled from 'styled-components';
-import Grid from 'material-ui/Grid';
-import Paper from 'material-ui/Paper';
-import { withTheme } from 'material-ui/styles';
-import { rem, darken } from 'polished';
-import Divider from 'material-ui/Divider';
 import Bookmark from 'components/Bookmark';
+import Divider from 'material-ui/Divider';
+import List from 'material-ui/List';
+import { withTheme } from 'material-ui/styles';
+import { darken } from 'polished';
+import { connect } from 'react-redux';
+import styled from 'styled-components';
 
 const withDivider = (entry, isLast) => {
   if (!isLast) {
@@ -22,12 +20,14 @@ const withDivider = (entry, isLast) => {
   return <Bookmark key={entry.id} {...entry} />;
 };
 
-const Wrapper = styled.div`flex-grow: 5;`;
+const Wrapper = styled.div`
+  flex-grow: 5;
+  overflow-y: auto;
+`;
 
 const FoldersList = withTheme(styled(List)`
   background-color: ${props =>
     darken(0.1, props.theme.palette.background.paper)};
-   height: 300vw;
 `);
 
 const FolderContainer = ({ activeFolder }) =>

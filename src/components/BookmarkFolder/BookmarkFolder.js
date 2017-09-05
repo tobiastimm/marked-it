@@ -3,8 +3,11 @@ import FolderIcon from 'material-ui-icons/Folder';
 import FolderOpenIcon from 'material-ui-icons/FolderOpen';
 import KeyBoardArrowDown from 'material-ui-icons/KeyboardArrowDown';
 import KeyBoardArrowUp from 'material-ui-icons/KeyboardArrowUp';
-import Avatar from 'material-ui/Avatar';
-import { ListItem, ListItemSecondaryAction, ListItemText } from 'material-ui/List';
+import {
+  ListItem,
+  ListItemSecondaryAction,
+  ListItemText
+} from 'material-ui/List';
 import Collapse from 'material-ui/transitions/Collapse';
 import { rem } from 'polished';
 import PropTypes from 'prop-types';
@@ -33,13 +36,11 @@ const BookmarkFolder = enhance(
     return (
       <Wrapper>
         <ListItem dense={false} disableGutters={false} button>
-          <Avatar>
-            <ToggleIconButton
-              onIcon={FolderOpenIcon}
-              offIcon={FolderIcon}
-              toggle={expand}
-            />
-          </Avatar>
+          <ToggleIconButton
+            onIcon={FolderOpenIcon}
+            offIcon={FolderIcon}
+            toggle={expand}
+          />
           <ListItemText primary={title} />
           <ListItemSecondaryAction>
             {!!children.length &&
@@ -55,7 +56,8 @@ const BookmarkFolder = enhance(
           <Collapse in={expand} transitionDuration={'auto'} unmountOnExit>
             {children.map(
               entry =>
-                !!entry.children && <BookmarkFolder indention={10} key={entry.id} {...entry} />
+                !!entry.children &&
+                <BookmarkFolder indention={10} key={entry.id} {...entry} />
             )}
           </Collapse>}
       </Wrapper>
