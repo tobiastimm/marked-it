@@ -10,7 +10,7 @@ const mockBookmarks = () => {
   const bookmarks = [];
   for (let index = 0, end = 9; index < end; index++) {
     bookmarks.push({
-      id: index + 1,
+      id: `${index + 1}`,
       title: `Bookmark ${index}`,
       url: 'https://google.com'
     });
@@ -22,13 +22,13 @@ const mockNestedBookmarks = () => {
   const bookmarks = [];
   for (let index = 0, end = 9; index < end; index++) {
     const bookmark = {
-      id: index + 1,
+      id: `${index + 1}`,
       title: `Bookmark ${index}`,
       url: 'https://google.com'
     };
     bookmarks.push(bookmark);
     bookmarks.push({
-      id: index + 10,
+      id: `${index + 10}`,
       title: `Nested Group ${index}`,
       children: [{ ...bookmark, id: bookmark.id + 10 }]
     });

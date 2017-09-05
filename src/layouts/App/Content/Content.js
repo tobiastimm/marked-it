@@ -1,15 +1,25 @@
+import EntriesContainer from 'containers/EntriesContainer';
+import FolderContainer from 'containers/FolderContainer';
+import Grid from 'material-ui/Grid';
 import React from 'react';
 import styled from 'styled-components';
-import BookmarksContainer from 'containers/BookmarksContainer';
 
 const Wrapper = styled.div`
-  margin-left: 2em;
-  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  margin-top: 6em;
+  align-items: stretch;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
 `;
 
 const Content = () =>
   <Wrapper>
-    <BookmarksContainer />
+    <EntriesContainer />
+    <FolderContainer />
   </Wrapper>;
 
 export default Content;

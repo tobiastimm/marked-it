@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { MuiThemeProvider } from 'material-ui/styles';
 import { withTheme } from 'material-ui/styles';
 
+import Header from './Header';
 import Content from './Content';
 import Theme from './theme';
 import GlobalStyles from './GlobalStyles';
@@ -17,6 +18,7 @@ const Layout = ({ children }) =>
   <MuiThemeProvider theme={Theme}>
     <Wrapper>
       <GlobalStyles />
+      <Header/>
       <Content>
         {children}
       </Content>

@@ -11,6 +11,11 @@ import BookmarkActions from '../BookmarkActions';
 
 const BookmarkLink = withTheme(styled.a`
   color: ${props => props.theme.palette.text.secondary};
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 `);
 
 const Bookmark = ({ id, title, url, actions }) =>
@@ -29,12 +34,12 @@ const Bookmark = ({ id, title, url, actions }) =>
   </ListItem>;
 
 Bookmark.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   url: PropTypes.string,
   actions: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number.isRequired,
+      id: PropTypes.string.isRequired,
       title: PropTypes.string.isRequired,
       icon: PropTypes.element,
       onClick: PropTypes.func.isRequired
@@ -44,7 +49,7 @@ Bookmark.propTypes = {
 
 Bookmark.defaultProps = {
   url: '',
-  actions: [{ id: 1, title: 'Test', onClick: () => {} }]
+  actions: []
 };
 
 export default Bookmark;

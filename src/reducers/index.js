@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
 
-import bookmarks from './bookmarksReducer';
+import entries from './entriesReducer';
+import activeFolder from './activeFolderReducer';
 
-const rootReducer = combineReducers({ bookmarks });
+const rootReducer = combineReducers({ entries, activeFolder });
 
 export default rootReducer;

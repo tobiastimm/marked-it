@@ -1,32 +1,17 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { rem } from 'polished';
-import List, {
-  ListItem,
-  ListItemText,
-  ListItemSecondaryAction
-} from 'material-ui/List';
-import Collapse from 'material-ui/transitions/Collapse';
-import { withTheme } from 'material-ui/styles';
-import { compose, withState, withHandlers } from 'recompose';
-import Avatar from 'material-ui/Avatar';
 import FolderIcon from 'material-ui-icons/Folder';
 import FolderOpenIcon from 'material-ui-icons/FolderOpen';
 import KeyBoardArrowDown from 'material-ui-icons/KeyboardArrowDown';
 import KeyBoardArrowUp from 'material-ui-icons/KeyboardArrowUp';
-import DeleteIcon from 'material-ui-icons/Delete';
-import IconButton from 'material-ui/IconButton';
-
-import BookmarkEntry from '../BookmarkEntry';
+import Avatar from 'material-ui/Avatar';
+import { ListItem, ListItemSecondaryAction, ListItemText } from 'material-ui/List';
+import Collapse from 'material-ui/transitions/Collapse';
+import { rem } from 'polished';
+import PropTypes from 'prop-types';
+import { compose, withHandlers, withState } from 'recompose';
+import styled from 'styled-components';
 
 import ToggleIconButton from '../ToggleIconButton';
-
-const Wrapper = withTheme(styled.div`
-  width: 100%;
-  padding-left: ${rem('10px')};
-  background: ${props => props.theme.palette.background.paper};
-`);
 
 const enhance = compose(
   withState('expand', 'toggleExpand', false),
@@ -37,11 +22,17 @@ const enhance = compose(
 );
 
 const BookmarkFolder = enhance(
-  ({ id, title, children, expand, showMore, showLess }) => {
+  ({ id, title, children, expand, showMore, showLess, indention }) => {
     const toggleExpand = () => (expand ? showLess() : showMore());
+
+    const Wrapper = styled.div`
+      width: 100%;
+      padding-left: ${rem(`${indention}px`)};
+    `;
+
     return (
       <Wrapper>
-        <ListItem dense={false} disableGutters={false}>
+        <ListItem dense={false} disableGutters={false} button>
           <Avatar>
             <ToggleIconButton
               onIcon={FolderOpenIcon}
@@ -62,7 +53,10 @@ const BookmarkFolder = enhance(
         </ListItem>
         {!!children.length &&
           <Collapse in={expand} transitionDuration={'auto'} unmountOnExit>
-            {children.map(entry => <BookmarkEntry key={entry.id} {...entry} />)}
+            {children.map(
+              entry =>
+                !!entry.children && <BookmarkFolder indention={10} key={entry.id} {...entry} />
+            )}
           </Collapse>}
       </Wrapper>
     );
@@ -72,11 +66,13 @@ const BookmarkFolder = enhance(
 BookmarkFolder.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  children: PropTypes.arrayOf(PropTypes.object).isRequired
+  children: PropTypes.arrayOf(PropTypes.object).isRequired,
+  indention: PropTypes.number
 };
 
 BookmarkFolder.defaultProps = {
-  children: []
+  children: [],
+  indention: 0
 };
 
 export default BookmarkFolder;

@@ -1,4 +1,4 @@
-import { getBookmarks } from './bookmarkApi';
+import { getBookmarksForTree, getBookmarkFolders } from './bookmarkApi';
 
 const getLocalState = () =>
   new Promise((resolve, reject) => {
@@ -8,9 +8,18 @@ const getLocalState = () =>
         if (state) {
           resolve(JSON.parse(state));
         } else {
-          getBookmarks().then(bookmarkTree => {
-            const initialState = { bookmarks: bookmarkTree.children };
-            resolve(initialState);
+          getBookmarkFolders().then(entries => {
+            getBookmarksForTree(entries.children[0].id).then(activeFolder => {
+              const initialState = {
+                activeFolder: {
+                  id: activeFolder.id,
+                  title: activeFolder.title,
+                  entries: activeFolder.children
+                },
+                entries: entries.children
+              };
+              resolve(initialState);
+            });
           });
         }
       } catch (error) {

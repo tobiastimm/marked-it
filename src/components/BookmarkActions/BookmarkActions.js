@@ -25,7 +25,8 @@ const enhance = compose(
   withState('anchorEl', 'setAnchorEl', undefined),
   withHandlers({
     openMenu: ({ setAnchorEl, toggleMenu }) => event => {
-      setAnchorEl(anchorEl => event.currentTarget);
+      const currentTarget = event.currentTarget;
+      setAnchorEl(anchorEl => currentTarget);
       toggleMenu(isOpen => true);
     },
     closeMenu: ({ toggleMenu }) => () => toggleMenu(isOpen => false)
@@ -67,10 +68,10 @@ const BookmarkActions = conditional(
 );
 
 BookmarkActions.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   actions: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number.isRequired,
+      id: PropTypes.string.isRequired,
       title: PropTypes.string.isRequired,
       icon: PropTypes.element,
       onClick: PropTypes.func.isRequired
