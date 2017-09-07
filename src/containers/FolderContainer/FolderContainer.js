@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Bookmark from 'components/Bookmark';
 import Divider from 'material-ui/Divider';
 import List from 'material-ui/List';
 import { withTheme } from 'material-ui/styles';
 import { darken } from 'polished';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
+import Bookmark from 'components/Bookmark';
 
 const withDivider = (entry, isLast) => {
   if (!isLast) {

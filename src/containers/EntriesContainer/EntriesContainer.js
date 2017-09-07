@@ -7,6 +7,7 @@ import Paper from 'material-ui/Paper';
 import { rem } from 'polished';
 import BookmarkFolder from 'components/BookmarkFolder';
 import { withTheme } from 'material-ui/styles';
+import { fetchActiveFolder } from 'actions/ActiveFolderActions';
 
 import { media } from 'lib/util';
 
@@ -21,13 +22,25 @@ const EntriesList = withTheme(styled(List)`
   background-color: ${props => props.theme.palette.background.paper};
 `);
 
-const EntriesContainer = ({ entries }) =>
+const EntriesContainer = ({ entries, setActiveFolder }) =>
   <Wrapper>
     <EntriesList>
-      {entries.map(entry => <BookmarkFolder key={entry.id} {...entry} />)}
+      {entries.map(entry =>
+        <BookmarkFolder
+          key={entry.id}
+          setActiveFolder={setActiveFolder}
+          {...entry}
+        />
+      )}
     </EntriesList>
   </Wrapper>;
 
 const mapStateToProps = state => ({ entries: state.entries });
 
-export default connect(mapStateToProps)(EntriesContainer);
+const mapDispatchToProps = dispatch => ({
+  setActiveFolder: id => {
+    dispatch(fetchActiveFolder(id));
+  }
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(EntriesContainer);

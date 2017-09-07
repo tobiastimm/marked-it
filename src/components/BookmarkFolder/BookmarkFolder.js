@@ -25,7 +25,16 @@ const enhance = compose(
 );
 
 const BookmarkFolder = enhance(
-  ({ id, title, children, expand, showMore, showLess, indention }) => {
+  ({
+    id,
+    title,
+    children,
+    expand,
+    showMore,
+    showLess,
+    indention,
+    setActiveFolder
+  }) => {
     const toggleExpand = () => (expand ? showLess() : showMore());
 
     const Wrapper = styled.div`
@@ -33,9 +42,18 @@ const BookmarkFolder = enhance(
       padding-left: ${rem(`${indention}px`)};
     `;
 
+    const handleClick = () => {
+      setActiveFolder(id);
+    };
+
     return (
       <Wrapper>
-        <ListItem dense={false} disableGutters={false} button>
+        <ListItem
+          dense={false}
+          disableGutters={false}
+          button
+          onClick={handleClick}
+        >
           <ToggleIconButton
             onIcon={FolderOpenIcon}
             offIcon={FolderIcon}
@@ -57,7 +75,7 @@ const BookmarkFolder = enhance(
             {children.map(
               entry =>
                 !!entry.children &&
-                <BookmarkFolder indention={10} key={entry.id} {...entry} />
+                <BookmarkFolder indention={10} key={entry.id} {...entry} setActiveFolder={setActiveFolder} />
             )}
           </Collapse>}
       </Wrapper>
