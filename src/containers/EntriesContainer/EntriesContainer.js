@@ -12,6 +12,7 @@ import { fetchActiveFolder } from 'actions/ActiveFolderActions';
 import { media } from 'lib/util';
 
 const Wrapper = styled.div`
+  max-width: ${rem('450px')};
   min-width: ${rem('450px')};
   ${media.desktop`min-width: ${rem('350px')}`};
   ${media.tablet`min-width: ${rem('250px')}`};
