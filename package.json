@@ -15,7 +15,7 @@
     "start": "cross-env NODE_PATH=src/ webpack --config ./config/webpack.dev --watch",
     "storybook": "cross-env NODE_PATH=src/ start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "test": "cross-env NODE_PATH=src/ node scripts/test.js --env=jsdom"
+    "test": "cross-env NODE_PATH=src/ node scripts/test.js --env=jsdom --no-watchman"
   },
   "babel": {
     "presets": [
@@ -84,6 +84,7 @@
     "babel-jest": "^20.0.3",
     "babel-loader": "^7.1.2",
     "babel-plugin-istanbul": "^4.1.4",
+    "babel-plugin-rewire": "^1.1.0",
     "babel-plugin-transform-react-jsx-self": "^6.22.0",
     "babel-plugin-transform-react-jsx-source": "^6.22.0",
     "babel-preset-env": "^1.6.0",
@@ -100,6 +101,7 @@
     "css-loader": "^0.28.5",
     "dotenv": "^4.0.0",
     "enzyme": "^2.9.1",
+    "enzyme-to-json": "^1.5.1",
     "eslint": "^4.5.0",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-config-prettier": "^2.3.0",

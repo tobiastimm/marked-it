@@ -9,7 +9,9 @@ const removeBookmarks = entry => {
 
 const getAllBookmarks = () =>
   new Promise(resolve => {
-    chrome.bookmarks.getTree(entries => resolve(entries[0]));
+    chrome.bookmarks.getTree(entries => {
+      resolve(entries[0]);
+    });
   });
 
 const getBookmarkFolders = () =>

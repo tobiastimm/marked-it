@@ -36,16 +36,16 @@ const mockNestedBookmarks = () => {
   return bookmarks;
 };
 
-storiesOf('BookmarkFolder', module)
-  .addDecorator(muiTheme('dark'))
-  .add('Default', () => <BookmarkFolder id="1" title="Chrome Bookmarks" />)
-  .add('With bookmarks', () =>
-    <BookmarkFolder id="1" title="MyBookmarks" children={mockBookmarks()} />
-  )
-  .add('With nested bookmarks', () =>
-    <BookmarkFolder
-      id="1"
-      title="MyBookmarks"
-      children={mockNestedBookmarks()}
-    />
-  );
+// storiesOf('BookmarkFolder', module)
+//   .addDecorator(muiTheme('dark'))
+//   .add('Default', () => <BookmarkFolder id="1" title="Chrome Bookmarks" />)
+//   .add('With bookmarks', () =>
+//     <BookmarkFolder id="1" title="MyBookmarks" children={mockBookmarks()} />
+//   )
+//   .add('With nested bookmarks', () =>
+//     <BookmarkFolder
+//       id="1"
+//       title="MyBookmarks"
+//       children={mockNestedBookmarks()}
+//     />
+//   );
