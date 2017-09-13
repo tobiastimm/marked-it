@@ -14,7 +14,7 @@ const getHostName = url => {
 };
 
 const getFavicon = url => {
-  if (url !== location.hostname) {
+  if (url !== window.location.hostname) {
     return FAVICON_SEARCH_ENGINE + url;
   }
   return null;

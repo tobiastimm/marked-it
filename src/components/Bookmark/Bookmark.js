@@ -10,7 +10,7 @@ import { withTheme } from 'material-ui/styles';
 import { rem } from 'polished';
 import Avatar from 'material-ui/Avatar';
 import BookmarkActions from '../BookmarkActions';
-import { getFavicon } from 'api/faviconApi';
+import { getFavicon } from '../../api/faviconApi';
 
 // TODO implement caching
 const Favicon = styled(Avatar)`

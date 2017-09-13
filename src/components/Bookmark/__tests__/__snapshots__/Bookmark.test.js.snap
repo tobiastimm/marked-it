@@ -1,0 +1,1258 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Bookmark Basic rendering should render a bookmark 1`] = `
+<Bookmark
+  actions={Array []}
+  id="1"
+  title="My Bookmark"
+  url=""
+>
+  <withStyles(ListItem)>
+    <ListItem
+      button={false}
+      classes={
+        Object {
+          ".MuiListItem-button-9:hover": "MuiListItem-button-9:hover",
+          ".MuiListItem-button-9:hover.MuiListItem-disabled-6": "MuiListItem-button-9:hover.MuiListItem-disabled-6",
+          "button": "MuiListItem-button-9",
+          "container": "MuiListItem-container-2",
+          "default": "MuiListItem-default-4",
+          "dense": "MuiListItem-dense-5",
+          "disabled": "MuiListItem-disabled-6",
+          "divider": "MuiListItem-divider-7",
+          "gutters": "MuiListItem-gutters-8",
+          "keyboardFocused": "MuiListItem-keyboardFocused-3",
+          "root": "MuiListItem-root-1",
+        }
+      }
+      component="li"
+      dense={false}
+      disableGutters={false}
+      disabled={false}
+      divider={false}
+    >
+      <div
+        className="MuiListItem-container-2"
+      >
+        <li
+          className="MuiListItem-root-1 MuiListItem-gutters-8 MuiListItem-default-4"
+          disabled={false}
+        >
+          <Styled(withStyles(Avatar))
+            imgProps={
+              Object {
+                "height": 16,
+                "width": 16,
+              }
+            }
+            src={null}
+          >
+            <withStyles(Avatar)
+              className="sc-bwzfXH hgFuUX"
+              imgProps={
+                Object {
+                  "height": 16,
+                  "width": 16,
+                }
+              }
+              src={null}
+            >
+              <Avatar
+                className="sc-bwzfXH hgFuUX"
+                classes={
+                  Object {
+                    "colorDefault": "MuiAvatar-colorDefault-11",
+                    "img": "MuiAvatar-img-12",
+                    "root": "MuiAvatar-root-10",
+                  }
+                }
+                component="div"
+                imgProps={
+                  Object {
+                    "height": 16,
+                    "width": 16,
+                  }
+                }
+                src={null}
+              >
+                <div
+                  className="MuiAvatar-root-10 sc-bwzfXH hgFuUX"
+                />
+              </Avatar>
+            </withStyles(Avatar)>
+          </Styled(withStyles(Avatar))>
+          <withStyles(ListItemText)
+            primary="My Bookmark"
+            secondary={
+              <withTheme(styled.a)
+                href=""
+              />
+            }
+          >
+            <ListItemText
+              classes={
+                Object {
+                  ".MuiListItemText-inset-14:first-child": "MuiListItemText-inset-14:first-child",
+                  ".MuiListItemText-root-13:first-child": "MuiListItemText-root-13:first-child",
+                  "dense": "MuiListItemText-dense-15",
+                  "inset": "MuiListItemText-inset-14",
+                  "root": "MuiListItemText-root-13",
+                  "text": "MuiListItemText-text-16",
+                  "textDense": "MuiListItemText-textDense-17",
+                }
+              }
+              disableTypography={false}
+              inset={false}
+              primary="My Bookmark"
+              secondary={
+                <withTheme(styled.a)
+                  href=""
+                />
+              }
+            >
+              <div
+                className="MuiListItemText-root-13"
+              >
+                <withStyles(Typography)
+                  className="MuiListItemText-text-16"
+                  type="subheading"
+                >
+                  <Typography
+                    align="inherit"
+                    className="MuiListItemText-text-16"
+                    classes={
+                      Object {
+                        "alignCenter": "MuiTypography-alignCenter-31",
+                        "alignJustify": "MuiTypography-alignJustify-33",
+                        "alignLeft": "MuiTypography-alignLeft-30",
+                        "alignRight": "MuiTypography-alignRight-32",
+                        "body1": "MuiTypography-body1-27",
+                        "body2": "MuiTypography-body2-26",
+                        "button": "MuiTypography-button-29",
+                        "caption": "MuiTypography-caption-28",
+                        "colorAccent": "MuiTypography-colorAccent-39",
+                        "colorInherit": "MuiTypography-colorInherit-37",
+                        "colorSecondary": "MuiTypography-colorSecondary-38",
+                        "display1": "MuiTypography-display1-22",
+                        "display2": "MuiTypography-display2-21",
+                        "display3": "MuiTypography-display3-20",
+                        "display4": "MuiTypography-display4-19",
+                        "gutterBottom": "MuiTypography-gutterBottom-35",
+                        "headline": "MuiTypography-headline-23",
+                        "noWrap": "MuiTypography-noWrap-34",
+                        "paragraph": "MuiTypography-paragraph-36",
+                        "root": "MuiTypography-root-18",
+                        "subheading": "MuiTypography-subheading-25",
+                        "title": "MuiTypography-title-24",
+                      }
+                    }
+                    color="default"
+                    gutterBottom={false}
+                    headlineMapping={
+                      Object {
+                        "body1": "p",
+                        "body2": "aside",
+                        "display1": "h1",
+                        "display2": "h1",
+                        "display3": "h1",
+                        "display4": "h1",
+                        "headline": "h1",
+                        "subheading": "h3",
+                        "title": "h2",
+                      }
+                    }
+                    noWrap={false}
+                    paragraph={false}
+                    type="subheading"
+                  >
+                    <h3
+                      className="MuiTypography-root-18 MuiTypography-subheading-25 MuiListItemText-text-16"
+                    >
+                      My Bookmark
+                    </h3>
+                  </Typography>
+                </withStyles(Typography)>
+                <withStyles(Typography)
+                  className="MuiListItemText-text-16"
+                  color="secondary"
+                  type="body1"
+                >
+                  <Typography
+                    align="inherit"
+                    className="MuiListItemText-text-16"
+                    classes={
+                      Object {
+                        "alignCenter": "MuiTypography-alignCenter-31",
+                        "alignJustify": "MuiTypography-alignJustify-33",
+                        "alignLeft": "MuiTypography-alignLeft-30",
+                        "alignRight": "MuiTypography-alignRight-32",
+                        "body1": "MuiTypography-body1-27",
+                        "body2": "MuiTypography-body2-26",
+                        "button": "MuiTypography-button-29",
+                        "caption": "MuiTypography-caption-28",
+                        "colorAccent": "MuiTypography-colorAccent-39",
+                        "colorInherit": "MuiTypography-colorInherit-37",
+                        "colorSecondary": "MuiTypography-colorSecondary-38",
+                        "display1": "MuiTypography-display1-22",
+                        "display2": "MuiTypography-display2-21",
+                        "display3": "MuiTypography-display3-20",
+                        "display4": "MuiTypography-display4-19",
+                        "gutterBottom": "MuiTypography-gutterBottom-35",
+                        "headline": "MuiTypography-headline-23",
+                        "noWrap": "MuiTypography-noWrap-34",
+                        "paragraph": "MuiTypography-paragraph-36",
+                        "root": "MuiTypography-root-18",
+                        "subheading": "MuiTypography-subheading-25",
+                        "title": "MuiTypography-title-24",
+                      }
+                    }
+                    color="secondary"
+                    gutterBottom={false}
+                    headlineMapping={
+                      Object {
+                        "body1": "p",
+                        "body2": "aside",
+                        "display1": "h1",
+                        "display2": "h1",
+                        "display3": "h1",
+                        "display4": "h1",
+                        "headline": "h1",
+                        "subheading": "h3",
+                        "title": "h2",
+                      }
+                    }
+                    noWrap={false}
+                    paragraph={false}
+                    type="body1"
+                  >
+                    <p
+                      className="MuiTypography-root-18 MuiTypography-body1-27 MuiTypography-colorSecondary-38 MuiListItemText-text-16"
+                    >
+                      <withTheme(styled.a)
+                        href=""
+                      >
+                        <styled.a
+                          href=""
+                          theme={
+                            Object {
+                              "breakpoints": Object {
+                                "between": [Function],
+                                "down": [Function],
+                                "getWidth": [Function],
+                                "keys": Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ],
+                                "only": [Function],
+                                "up": [Function],
+                                "values": Array [
+                                  360,
+                                  600,
+                                  960,
+                                  1280,
+                                  1920,
+                                ],
+                              },
+                              "direction": "ltr",
+                              "mixins": Object {
+                                "gutters": [Function],
+                              },
+                              "palette": Object {
+                                "accent": Object {
+                                  "100": "#f8bbd0",
+                                  "200": "#f48fb1",
+                                  "300": "#f06292",
+                                  "400": "#ec407a",
+                                  "50": "#fce4ec",
+                                  "500": "#e91e63",
+                                  "600": "#d81b60",
+                                  "700": "#c2185b",
+                                  "800": "#ad1457",
+                                  "900": "#880e4f",
+                                  "A100": "#ff80ab",
+                                  "A200": "#ff4081",
+                                  "A400": "#f50057",
+                                  "A700": "#c51162",
+                                  "contrastDefaultColor": "light",
+                                },
+                                "action": Object {
+                                  "active": "rgba(0, 0, 0, 0.54)",
+                                  "disabled": "rgba(0, 0, 0, 0.26)",
+                                },
+                                "background": Object {
+                                  "appBar": "#f5f5f5",
+                                  "contentFrame": "#eeeeee",
+                                  "default": "#fafafa",
+                                  "paper": "#fff",
+                                },
+                                "common": Object {
+                                  "black": "#000",
+                                  "darkBlack": "rgba(0, 0, 0, 0.87)",
+                                  "darkWhite": "rgba(255, 255, 255, 0.87)",
+                                  "faintBlack": "rgba(0, 0, 0, 0.12)",
+                                  "fullBlack": "rgba(0, 0, 0, 1)",
+                                  "fullWhite": "rgba(255, 255, 255, 1)",
+                                  "lightBlack": "rgba(0, 0, 0, 0.54)",
+                                  "lightWhite": "rgba(255, 255, 255, 0.54)",
+                                  "minBlack": "rgba(0, 0, 0, 0.26)",
+                                  "transparent": "rgba(0, 0, 0, 0)",
+                                  "white": "#fff",
+                                },
+                                "error": Object {
+                                  "100": "#ffcdd2",
+                                  "200": "#ef9a9a",
+                                  "300": "#e57373",
+                                  "400": "#ef5350",
+                                  "50": "#ffebee",
+                                  "500": "#f44336",
+                                  "600": "#e53935",
+                                  "700": "#d32f2f",
+                                  "800": "#c62828",
+                                  "900": "#b71c1c",
+                                  "A100": "#ff8a80",
+                                  "A200": "#ff5252",
+                                  "A400": "#ff1744",
+                                  "A700": "#d50000",
+                                  "contrastDefaultColor": "light",
+                                },
+                                "getContrastText": [Function],
+                                "grey": Object {
+                                  "100": "#f5f5f5",
+                                  "200": "#eeeeee",
+                                  "300": "#e0e0e0",
+                                  "400": "#bdbdbd",
+                                  "50": "#fafafa",
+                                  "500": "#9e9e9e",
+                                  "600": "#757575",
+                                  "700": "#616161",
+                                  "800": "#424242",
+                                  "900": "#212121",
+                                  "A100": "#d5d5d5",
+                                  "A200": "#aaaaaa",
+                                  "A400": "#303030",
+                                  "A700": "#616161",
+                                  "contrastDefaultColor": "dark",
+                                },
+                                "input": Object {
+                                  "bottomLine": "rgba(0, 0, 0, 0.42)",
+                                  "disabled": "rgba(0, 0, 0, 0.42)",
+                                  "helperText": "rgba(0, 0, 0, 0.54)",
+                                  "inputText": "rgba(0, 0, 0, 0.87)",
+                                  "labelText": "rgba(0, 0, 0, 0.54)",
+                                },
+                                "primary": Object {
+                                  "100": "#c5cae9",
+                                  "200": "#9fa8da",
+                                  "300": "#7986cb",
+                                  "400": "#5c6bc0",
+                                  "50": "#e8eaf6",
+                                  "500": "#3f51b5",
+                                  "600": "#3949ab",
+                                  "700": "#303f9f",
+                                  "800": "#283593",
+                                  "900": "#1a237e",
+                                  "A100": "#8c9eff",
+                                  "A200": "#536dfe",
+                                  "A400": "#3d5afe",
+                                  "A700": "#304ffe",
+                                  "contrastDefaultColor": "light",
+                                },
+                                "shades": Object {
+                                  "dark": Object {
+                                    "action": Object {
+                                      "active": "rgba(255, 255, 255, 1)",
+                                      "disabled": "rgba(255, 255, 255, 0.3)",
+                                    },
+                                    "background": Object {
+                                      "appBar": "#212121",
+                                      "contentFrame": "#212121",
+                                      "default": "#303030",
+                                      "paper": "#424242",
+                                      "status": "#000",
+                                    },
+                                    "input": Object {
+                                      "bottomLine": "rgba(255, 255, 255, 0.7)",
+                                      "disabled": "rgba(255, 255, 255, 0.5)",
+                                      "helperText": "rgba(255, 255, 255, 0.7)",
+                                      "inputText": "rgba(255, 255, 255, 1)",
+                                      "labelText": "rgba(255, 255, 255, 0.7)",
+                                    },
+                                    "text": Object {
+                                      "disabled": "rgba(255, 255, 255, 0.5)",
+                                      "divider": "rgba(255, 255, 255, 0.12)",
+                                      "hint": "rgba(255, 255, 255, 0.5)",
+                                      "icon": "rgba(255, 255, 255, 0.5)",
+                                      "lightDivider": "rgba(255, 255, 255, 0.075)",
+                                      "primary": "rgba(255, 255, 255, 1)",
+                                      "secondary": "rgba(255, 255, 255, 0.7)",
+                                    },
+                                  },
+                                  "light": Object {
+                                    "action": Object {
+                                      "active": "rgba(0, 0, 0, 0.54)",
+                                      "disabled": "rgba(0, 0, 0, 0.26)",
+                                    },
+                                    "background": Object {
+                                      "appBar": "#f5f5f5",
+                                      "contentFrame": "#eeeeee",
+                                      "default": "#fafafa",
+                                      "paper": "#fff",
+                                    },
+                                    "input": Object {
+                                      "bottomLine": "rgba(0, 0, 0, 0.42)",
+                                      "disabled": "rgba(0, 0, 0, 0.42)",
+                                      "helperText": "rgba(0, 0, 0, 0.54)",
+                                      "inputText": "rgba(0, 0, 0, 0.87)",
+                                      "labelText": "rgba(0, 0, 0, 0.54)",
+                                    },
+                                    "text": Object {
+                                      "disabled": "rgba(0, 0, 0, 0.38)",
+                                      "divider": "rgba(0, 0, 0, 0.12)",
+                                      "hint": "rgba(0, 0, 0, 0.38)",
+                                      "icon": "rgba(0, 0, 0, 0.38)",
+                                      "lightDivider": "rgba(0, 0, 0, 0.075)",
+                                      "primary": "rgba(0, 0, 0, 0.87)",
+                                      "secondary": "rgba(0, 0, 0, 0.54)",
+                                    },
+                                  },
+                                },
+                                "text": Object {
+                                  "disabled": "rgba(0, 0, 0, 0.38)",
+                                  "divider": "rgba(0, 0, 0, 0.12)",
+                                  "hint": "rgba(0, 0, 0, 0.38)",
+                                  "icon": "rgba(0, 0, 0, 0.38)",
+                                  "lightDivider": "rgba(0, 0, 0, 0.075)",
+                                  "primary": "rgba(0, 0, 0, 0.87)",
+                                  "secondary": "rgba(0, 0, 0, 0.54)",
+                                },
+                                "type": "light",
+                              },
+                              "shadows": Array [
+                                "none",
+                                "0px 1px 3px 0px rgba(0, 0, 0, 0.2),0px 1px 1px 0px rgba(0, 0, 0, 0.14),0px 2px 1px -1px rgba(0, 0, 0, 0.12)",
+                                "0px 1px 5px 0px rgba(0, 0, 0, 0.2),0px 2px 2px 0px rgba(0, 0, 0, 0.14),0px 3px 1px -2px rgba(0, 0, 0, 0.12)",
+                                "0px 1px 8px 0px rgba(0, 0, 0, 0.2),0px 3px 4px 0px rgba(0, 0, 0, 0.14),0px 3px 3px -2px rgba(0, 0, 0, 0.12)",
+                                "0px 2px 4px -1px rgba(0, 0, 0, 0.2),0px 4px 5px 0px rgba(0, 0, 0, 0.14),0px 1px 10px 0px rgba(0, 0, 0, 0.12)",
+                                "0px 3px 5px -1px rgba(0, 0, 0, 0.2),0px 5px 8px 0px rgba(0, 0, 0, 0.14),0px 1px 14px 0px rgba(0, 0, 0, 0.12)",
+                                "0px 3px 5px -1px rgba(0, 0, 0, 0.2),0px 6px 10px 0px rgba(0, 0, 0, 0.14),0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
+                                "0px 4px 5px -2px rgba(0, 0, 0, 0.2),0px 7px 10px 1px rgba(0, 0, 0, 0.14),0px 2px 16px 1px rgba(0, 0, 0, 0.12)",
+                                "0px 5px 5px -3px rgba(0, 0, 0, 0.2),0px 8px 10px 1px rgba(0, 0, 0, 0.14),0px 3px 14px 2px rgba(0, 0, 0, 0.12)",
+                                "0px 5px 6px -3px rgba(0, 0, 0, 0.2),0px 9px 12px 1px rgba(0, 0, 0, 0.14),0px 3px 16px 2px rgba(0, 0, 0, 0.12)",
+                                "0px 6px 6px -3px rgba(0, 0, 0, 0.2),0px 10px 14px 1px rgba(0, 0, 0, 0.14),0px 4px 18px 3px rgba(0, 0, 0, 0.12)",
+                                "0px 6px 7px -4px rgba(0, 0, 0, 0.2),0px 11px 15px 1px rgba(0, 0, 0, 0.14),0px 4px 20px 3px rgba(0, 0, 0, 0.12)",
+                                "0px 7px 8px -4px rgba(0, 0, 0, 0.2),0px 12px 17px 2px rgba(0, 0, 0, 0.14),0px 5px 22px 4px rgba(0, 0, 0, 0.12)",
+                                "0px 7px 8px -4px rgba(0, 0, 0, 0.2),0px 13px 19px 2px rgba(0, 0, 0, 0.14),0px 5px 24px 4px rgba(0, 0, 0, 0.12)",
+                                "0px 7px 9px -4px rgba(0, 0, 0, 0.2),0px 14px 21px 2px rgba(0, 0, 0, 0.14),0px 5px 26px 4px rgba(0, 0, 0, 0.12)",
+                                "0px 8px 9px -5px rgba(0, 0, 0, 0.2),0px 15px 22px 2px rgba(0, 0, 0, 0.14),0px 6px 28px 5px rgba(0, 0, 0, 0.12)",
+                                "0px 8px 10px -5px rgba(0, 0, 0, 0.2),0px 16px 24px 2px rgba(0, 0, 0, 0.14),0px 6px 30px 5px rgba(0, 0, 0, 0.12)",
+                                "0px 8px 11px -5px rgba(0, 0, 0, 0.2),0px 17px 26px 2px rgba(0, 0, 0, 0.14),0px 6px 32px 5px rgba(0, 0, 0, 0.12)",
+                                "0px 9px 11px -5px rgba(0, 0, 0, 0.2),0px 18px 28px 2px rgba(0, 0, 0, 0.14),0px 7px 34px 6px rgba(0, 0, 0, 0.12)",
+                                "0px 9px 12px -6px rgba(0, 0, 0, 0.2),0px 19px 29px 2px rgba(0, 0, 0, 0.14),0px 7px 36px 6px rgba(0, 0, 0, 0.12)",
+                                "0px 10px 13px -6px rgba(0, 0, 0, 0.2),0px 20px 31px 3px rgba(0, 0, 0, 0.14),0px 8px 38px 7px rgba(0, 0, 0, 0.12)",
+                                "0px 10px 13px -6px rgba(0, 0, 0, 0.2),0px 21px 33px 3px rgba(0, 0, 0, 0.14),0px 8px 40px 7px rgba(0, 0, 0, 0.12)",
+                                "0px 10px 14px -6px rgba(0, 0, 0, 0.2),0px 22px 35px 3px rgba(0, 0, 0, 0.14),0px 8px 42px 7px rgba(0, 0, 0, 0.12)",
+                                "0px 11px 14px -7px rgba(0, 0, 0, 0.2),0px 23px 36px 3px rgba(0, 0, 0, 0.14),0px 9px 44px 8px rgba(0, 0, 0, 0.12)",
+                                "0px 11px 15px -7px rgba(0, 0, 0, 0.2),0px 24px 38px 3px rgba(0, 0, 0, 0.14),0px 9px 46px 8px rgba(0, 0, 0, 0.12)",
+                              ],
+                              "spacing": Object {
+                                "unit": 8,
+                              },
+                              "transitions": Object {
+                                "create": [Function],
+                                "duration": Object {
+                                  "complex": 375,
+                                  "enteringScreen": 225,
+                                  "leavingScreen": 195,
+                                  "short": 250,
+                                  "shorter": 200,
+                                  "shortest": 150,
+                                  "standard": 300,
+                                },
+                                "easing": Object {
+                                  "easeIn": "cubic-bezier(0.4, 0, 1, 1)",
+                                  "easeInOut": "cubic-bezier(0.4, 0, 0.2, 1)",
+                                  "easeOut": "cubic-bezier(0.0, 0, 0.2, 1)",
+                                  "sharp": "cubic-bezier(0.4, 0, 0.6, 1)",
+                                },
+                                "getAutoHeightDuration": [Function],
+                              },
+                              "typography": Object {
+                                "body1": Object {
+                                  "color": "rgba(0, 0, 0, 0.87)",
+                                  "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                  "fontSize": 14,
+                                  "fontWeight": 400,
+                                  "lineHeight": "20px",
+                                },
+                                "body2": Object {
+                                  "color": "rgba(0, 0, 0, 0.87)",
+                                  "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                  "fontSize": 14,
+                                  "fontWeight": 500,
+                                  "lineHeight": "24px",
+                                },
+                                "button": Object {
+                                  "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                  "fontSize": 14,
+                                  "fontWeight": 500,
+                                  "textTransform": "uppercase",
+                                },
+                                "caption": Object {
+                                  "color": "rgba(0, 0, 0, 0.54)",
+                                  "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                  "fontSize": 12,
+                                  "fontWeight": 400,
+                                  "lineHeight": 1,
+                                },
+                                "display1": Object {
+                                  "color": "rgba(0, 0, 0, 0.54)",
+                                  "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                  "fontSize": 34,
+                                  "fontWeight": 400,
+                                  "lineHeight": "40px",
+                                },
+                                "display2": Object {
+                                  "color": "rgba(0, 0, 0, 0.54)",
+                                  "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                  "fontSize": 45,
+                                  "fontWeight": 400,
+                                  "lineHeight": "48px",
+                                },
+                                "display3": Object {
+                                  "color": "rgba(0, 0, 0, 0.54)",
+                                  "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                  "fontSize": 56,
+                                  "fontWeight": 400,
+                                  "letterSpacing": "-.02em",
+                                  "lineHeight": 1.35,
+                                },
+                                "display4": Object {
+                                  "color": "rgba(0, 0, 0, 0.54)",
+                                  "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                  "fontSize": 112,
+                                  "fontWeight": 300,
+                                  "letterSpacing": "-.04em",
+                                  "lineHeight": 1,
+                                },
+                                "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                "fontSize": 14,
+                                "fontWeightLight": 300,
+                                "fontWeightMedium": 500,
+                                "fontWeightRegular": 400,
+                                "headline": Object {
+                                  "color": "rgba(0, 0, 0, 0.87)",
+                                  "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                  "fontSize": 24,
+                                  "fontWeight": 400,
+                                  "lineHeight": "32px",
+                                },
+                                "subheading": Object {
+                                  "color": "rgba(0, 0, 0, 0.87)",
+                                  "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                  "fontSize": 16,
+                                  "fontWeight": 400,
+                                  "lineHeight": "24px",
+                                },
+                                "title": Object {
+                                  "color": "rgba(0, 0, 0, 0.87)",
+                                  "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                  "fontSize": 21,
+                                  "fontWeight": 500,
+                                  "lineHeight": 1,
+                                },
+                              },
+                              "zIndex": Object {
+                                "appBar": 1100,
+                                "dialog": 1500,
+                                "dialogOverlay": 1400,
+                                "drawerOverlay": 1200,
+                                "layer": 2000,
+                                "menu": 1000,
+                                "mobileStepper": 900,
+                                "navDrawer": 1300,
+                                "popover": 2100,
+                                "snackbar": 2900,
+                                "tooltip": 3000,
+                              },
+                            }
+                          }
+                        >
+                          <a
+                            className="sc-htpNat lkKYwx"
+                            href=""
+                          />
+                        </styled.a>
+                      </withTheme(styled.a)>
+                    </p>
+                  </Typography>
+                </withStyles(Typography)>
+              </div>
+            </ListItemText>
+          </withStyles(ListItemText)>
+        </li>
+        <withStyles(ListItemSecondaryAction)>
+          <ListItemSecondaryAction
+            classes={
+              Object {
+                "root": "MuiListItemSecondaryAction-root-40",
+              }
+            }
+          >
+            <div
+              className="MuiListItemSecondaryAction-root-40"
+            >
+              <branch(withState(withState(withHandlers(Component))))
+                actions={Array []}
+                id="1"
+              >
+                <Nothing
+                  actions={Array []}
+                  id="1"
+                />
+              </branch(withState(withState(withHandlers(Component))))>
+            </div>
+          </ListItemSecondaryAction>
+        </withStyles(ListItemSecondaryAction)>
+      </div>
+    </ListItem>
+  </withStyles(ListItem)>
+</Bookmark>
+`;
+
+exports[`Component: Bookmark Basic rendering should render a bookmark with an url 1`] = `
+<Bookmark
+  actions={Array []}
+  id="2"
+  title="My Bookmark"
+  url="https://google.com"
+>
+  <withStyles(ListItem)>
+    <ListItem
+      button={false}
+      classes={
+        Object {
+          ".MuiListItem-button-9:hover": "MuiListItem-button-9:hover",
+          ".MuiListItem-button-9:hover.MuiListItem-disabled-6": "MuiListItem-button-9:hover.MuiListItem-disabled-6",
+          "button": "MuiListItem-button-9",
+          "container": "MuiListItem-container-2",
+          "default": "MuiListItem-default-4",
+          "dense": "MuiListItem-dense-5",
+          "disabled": "MuiListItem-disabled-6",
+          "divider": "MuiListItem-divider-7",
+          "gutters": "MuiListItem-gutters-8",
+          "keyboardFocused": "MuiListItem-keyboardFocused-3",
+          "root": "MuiListItem-root-1",
+        }
+      }
+      component="li"
+      dense={false}
+      disableGutters={false}
+      disabled={false}
+      divider={false}
+    >
+      <div
+        className="MuiListItem-container-2"
+      >
+        <li
+          className="MuiListItem-root-1 MuiListItem-gutters-8 MuiListItem-default-4"
+          disabled={false}
+        >
+          <Styled(withStyles(Avatar))
+            imgProps={
+              Object {
+                "height": 16,
+                "width": 16,
+              }
+            }
+            src="http://www.google.com/s2/favicons?domain=https://google.com"
+          >
+            <withStyles(Avatar)
+              className="sc-bwzfXH hgFuUX"
+              imgProps={
+                Object {
+                  "height": 16,
+                  "width": 16,
+                }
+              }
+              src="http://www.google.com/s2/favicons?domain=https://google.com"
+            >
+              <Avatar
+                className="sc-bwzfXH hgFuUX"
+                classes={
+                  Object {
+                    "colorDefault": "MuiAvatar-colorDefault-11",
+                    "img": "MuiAvatar-img-12",
+                    "root": "MuiAvatar-root-10",
+                  }
+                }
+                component="div"
+                imgProps={
+                  Object {
+                    "height": 16,
+                    "width": 16,
+                  }
+                }
+                src="http://www.google.com/s2/favicons?domain=https://google.com"
+              >
+                <div
+                  className="MuiAvatar-root-10 sc-bwzfXH hgFuUX"
+                >
+                  <img
+                    className="MuiAvatar-img-12"
+                    height={16}
+                    src="http://www.google.com/s2/favicons?domain=https://google.com"
+                    width={16}
+                  />
+                </div>
+              </Avatar>
+            </withStyles(Avatar)>
+          </Styled(withStyles(Avatar))>
+          <withStyles(ListItemText)
+            primary="My Bookmark"
+            secondary={
+              <withTheme(styled.a)
+                href="https://google.com"
+              >
+                https://google.com
+              </withTheme(styled.a)>
+            }
+          >
+            <ListItemText
+              classes={
+                Object {
+                  ".MuiListItemText-inset-14:first-child": "MuiListItemText-inset-14:first-child",
+                  ".MuiListItemText-root-13:first-child": "MuiListItemText-root-13:first-child",
+                  "dense": "MuiListItemText-dense-15",
+                  "inset": "MuiListItemText-inset-14",
+                  "root": "MuiListItemText-root-13",
+                  "text": "MuiListItemText-text-16",
+                  "textDense": "MuiListItemText-textDense-17",
+                }
+              }
+              disableTypography={false}
+              inset={false}
+              primary="My Bookmark"
+              secondary={
+                <withTheme(styled.a)
+                  href="https://google.com"
+                >
+                  https://google.com
+                </withTheme(styled.a)>
+              }
+            >
+              <div
+                className="MuiListItemText-root-13"
+              >
+                <withStyles(Typography)
+                  className="MuiListItemText-text-16"
+                  type="subheading"
+                >
+                  <Typography
+                    align="inherit"
+                    className="MuiListItemText-text-16"
+                    classes={
+                      Object {
+                        "alignCenter": "MuiTypography-alignCenter-31",
+                        "alignJustify": "MuiTypography-alignJustify-33",
+                        "alignLeft": "MuiTypography-alignLeft-30",
+                        "alignRight": "MuiTypography-alignRight-32",
+                        "body1": "MuiTypography-body1-27",
+                        "body2": "MuiTypography-body2-26",
+                        "button": "MuiTypography-button-29",
+                        "caption": "MuiTypography-caption-28",
+                        "colorAccent": "MuiTypography-colorAccent-39",
+                        "colorInherit": "MuiTypography-colorInherit-37",
+                        "colorSecondary": "MuiTypography-colorSecondary-38",
+                        "display1": "MuiTypography-display1-22",
+                        "display2": "MuiTypography-display2-21",
+                        "display3": "MuiTypography-display3-20",
+                        "display4": "MuiTypography-display4-19",
+                        "gutterBottom": "MuiTypography-gutterBottom-35",
+                        "headline": "MuiTypography-headline-23",
+                        "noWrap": "MuiTypography-noWrap-34",
+                        "paragraph": "MuiTypography-paragraph-36",
+                        "root": "MuiTypography-root-18",
+                        "subheading": "MuiTypography-subheading-25",
+                        "title": "MuiTypography-title-24",
+                      }
+                    }
+                    color="default"
+                    gutterBottom={false}
+                    headlineMapping={
+                      Object {
+                        "body1": "p",
+                        "body2": "aside",
+                        "display1": "h1",
+                        "display2": "h1",
+                        "display3": "h1",
+                        "display4": "h1",
+                        "headline": "h1",
+                        "subheading": "h3",
+                        "title": "h2",
+                      }
+                    }
+                    noWrap={false}
+                    paragraph={false}
+                    type="subheading"
+                  >
+                    <h3
+                      className="MuiTypography-root-18 MuiTypography-subheading-25 MuiListItemText-text-16"
+                    >
+                      My Bookmark
+                    </h3>
+                  </Typography>
+                </withStyles(Typography)>
+                <withStyles(Typography)
+                  className="MuiListItemText-text-16"
+                  color="secondary"
+                  type="body1"
+                >
+                  <Typography
+                    align="inherit"
+                    className="MuiListItemText-text-16"
+                    classes={
+                      Object {
+                        "alignCenter": "MuiTypography-alignCenter-31",
+                        "alignJustify": "MuiTypography-alignJustify-33",
+                        "alignLeft": "MuiTypography-alignLeft-30",
+                        "alignRight": "MuiTypography-alignRight-32",
+                        "body1": "MuiTypography-body1-27",
+                        "body2": "MuiTypography-body2-26",
+                        "button": "MuiTypography-button-29",
+                        "caption": "MuiTypography-caption-28",
+                        "colorAccent": "MuiTypography-colorAccent-39",
+                        "colorInherit": "MuiTypography-colorInherit-37",
+                        "colorSecondary": "MuiTypography-colorSecondary-38",
+                        "display1": "MuiTypography-display1-22",
+                        "display2": "MuiTypography-display2-21",
+                        "display3": "MuiTypography-display3-20",
+                        "display4": "MuiTypography-display4-19",
+                        "gutterBottom": "MuiTypography-gutterBottom-35",
+                        "headline": "MuiTypography-headline-23",
+                        "noWrap": "MuiTypography-noWrap-34",
+                        "paragraph": "MuiTypography-paragraph-36",
+                        "root": "MuiTypography-root-18",
+                        "subheading": "MuiTypography-subheading-25",
+                        "title": "MuiTypography-title-24",
+                      }
+                    }
+                    color="secondary"
+                    gutterBottom={false}
+                    headlineMapping={
+                      Object {
+                        "body1": "p",
+                        "body2": "aside",
+                        "display1": "h1",
+                        "display2": "h1",
+                        "display3": "h1",
+                        "display4": "h1",
+                        "headline": "h1",
+                        "subheading": "h3",
+                        "title": "h2",
+                      }
+                    }
+                    noWrap={false}
+                    paragraph={false}
+                    type="body1"
+                  >
+                    <p
+                      className="MuiTypography-root-18 MuiTypography-body1-27 MuiTypography-colorSecondary-38 MuiListItemText-text-16"
+                    >
+                      <withTheme(styled.a)
+                        href="https://google.com"
+                      >
+                        <styled.a
+                          href="https://google.com"
+                          theme={
+                            Object {
+                              "breakpoints": Object {
+                                "between": [Function],
+                                "down": [Function],
+                                "getWidth": [Function],
+                                "keys": Array [
+                                  "xs",
+                                  "sm",
+                                  "md",
+                                  "lg",
+                                  "xl",
+                                ],
+                                "only": [Function],
+                                "up": [Function],
+                                "values": Array [
+                                  360,
+                                  600,
+                                  960,
+                                  1280,
+                                  1920,
+                                ],
+                              },
+                              "direction": "ltr",
+                              "mixins": Object {
+                                "gutters": [Function],
+                              },
+                              "palette": Object {
+                                "accent": Object {
+                                  "100": "#f8bbd0",
+                                  "200": "#f48fb1",
+                                  "300": "#f06292",
+                                  "400": "#ec407a",
+                                  "50": "#fce4ec",
+                                  "500": "#e91e63",
+                                  "600": "#d81b60",
+                                  "700": "#c2185b",
+                                  "800": "#ad1457",
+                                  "900": "#880e4f",
+                                  "A100": "#ff80ab",
+                                  "A200": "#ff4081",
+                                  "A400": "#f50057",
+                                  "A700": "#c51162",
+                                  "contrastDefaultColor": "light",
+                                },
+                                "action": Object {
+                                  "active": "rgba(0, 0, 0, 0.54)",
+                                  "disabled": "rgba(0, 0, 0, 0.26)",
+                                },
+                                "background": Object {
+                                  "appBar": "#f5f5f5",
+                                  "contentFrame": "#eeeeee",
+                                  "default": "#fafafa",
+                                  "paper": "#fff",
+                                },
+                                "common": Object {
+                                  "black": "#000",
+                                  "darkBlack": "rgba(0, 0, 0, 0.87)",
+                                  "darkWhite": "rgba(255, 255, 255, 0.87)",
+                                  "faintBlack": "rgba(0, 0, 0, 0.12)",
+                                  "fullBlack": "rgba(0, 0, 0, 1)",
+                                  "fullWhite": "rgba(255, 255, 255, 1)",
+                                  "lightBlack": "rgba(0, 0, 0, 0.54)",
+                                  "lightWhite": "rgba(255, 255, 255, 0.54)",
+                                  "minBlack": "rgba(0, 0, 0, 0.26)",
+                                  "transparent": "rgba(0, 0, 0, 0)",
+                                  "white": "#fff",
+                                },
+                                "error": Object {
+                                  "100": "#ffcdd2",
+                                  "200": "#ef9a9a",
+                                  "300": "#e57373",
+                                  "400": "#ef5350",
+                                  "50": "#ffebee",
+                                  "500": "#f44336",
+                                  "600": "#e53935",
+                                  "700": "#d32f2f",
+                                  "800": "#c62828",
+                                  "900": "#b71c1c",
+                                  "A100": "#ff8a80",
+                                  "A200": "#ff5252",
+                                  "A400": "#ff1744",
+                                  "A700": "#d50000",
+                                  "contrastDefaultColor": "light",
+                                },
+                                "getContrastText": [Function],
+                                "grey": Object {
+                                  "100": "#f5f5f5",
+                                  "200": "#eeeeee",
+                                  "300": "#e0e0e0",
+                                  "400": "#bdbdbd",
+                                  "50": "#fafafa",
+                                  "500": "#9e9e9e",
+                                  "600": "#757575",
+                                  "700": "#616161",
+                                  "800": "#424242",
+                                  "900": "#212121",
+                                  "A100": "#d5d5d5",
+                                  "A200": "#aaaaaa",
+                                  "A400": "#303030",
+                                  "A700": "#616161",
+                                  "contrastDefaultColor": "dark",
+                                },
+                                "input": Object {
+                                  "bottomLine": "rgba(0, 0, 0, 0.42)",
+                                  "disabled": "rgba(0, 0, 0, 0.42)",
+                                  "helperText": "rgba(0, 0, 0, 0.54)",
+                                  "inputText": "rgba(0, 0, 0, 0.87)",
+                                  "labelText": "rgba(0, 0, 0, 0.54)",
+                                },
+                                "primary": Object {
+                                  "100": "#c5cae9",
+                                  "200": "#9fa8da",
+                                  "300": "#7986cb",
+                                  "400": "#5c6bc0",
+                                  "50": "#e8eaf6",
+                                  "500": "#3f51b5",
+                                  "600": "#3949ab",
+                                  "700": "#303f9f",
+                                  "800": "#283593",
+                                  "900": "#1a237e",
+                                  "A100": "#8c9eff",
+                                  "A200": "#536dfe",
+                                  "A400": "#3d5afe",
+                                  "A700": "#304ffe",
+                                  "contrastDefaultColor": "light",
+                                },
+                                "shades": Object {
+                                  "dark": Object {
+                                    "action": Object {
+                                      "active": "rgba(255, 255, 255, 1)",
+                                      "disabled": "rgba(255, 255, 255, 0.3)",
+                                    },
+                                    "background": Object {
+                                      "appBar": "#212121",
+                                      "contentFrame": "#212121",
+                                      "default": "#303030",
+                                      "paper": "#424242",
+                                      "status": "#000",
+                                    },
+                                    "input": Object {
+                                      "bottomLine": "rgba(255, 255, 255, 0.7)",
+                                      "disabled": "rgba(255, 255, 255, 0.5)",
+                                      "helperText": "rgba(255, 255, 255, 0.7)",
+                                      "inputText": "rgba(255, 255, 255, 1)",
+                                      "labelText": "rgba(255, 255, 255, 0.7)",
+                                    },
+                                    "text": Object {
+                                      "disabled": "rgba(255, 255, 255, 0.5)",
+                                      "divider": "rgba(255, 255, 255, 0.12)",
+                                      "hint": "rgba(255, 255, 255, 0.5)",
+                                      "icon": "rgba(255, 255, 255, 0.5)",
+                                      "lightDivider": "rgba(255, 255, 255, 0.075)",
+                                      "primary": "rgba(255, 255, 255, 1)",
+                                      "secondary": "rgba(255, 255, 255, 0.7)",
+                                    },
+                                  },
+                                  "light": Object {
+                                    "action": Object {
+                                      "active": "rgba(0, 0, 0, 0.54)",
+                                      "disabled": "rgba(0, 0, 0, 0.26)",
+                                    },
+                                    "background": Object {
+                                      "appBar": "#f5f5f5",
+                                      "contentFrame": "#eeeeee",
+                                      "default": "#fafafa",
+                                      "paper": "#fff",
+                                    },
+                                    "input": Object {
+                                      "bottomLine": "rgba(0, 0, 0, 0.42)",
+                                      "disabled": "rgba(0, 0, 0, 0.42)",
+                                      "helperText": "rgba(0, 0, 0, 0.54)",
+                                      "inputText": "rgba(0, 0, 0, 0.87)",
+                                      "labelText": "rgba(0, 0, 0, 0.54)",
+                                    },
+                                    "text": Object {
+                                      "disabled": "rgba(0, 0, 0, 0.38)",
+                                      "divider": "rgba(0, 0, 0, 0.12)",
+                                      "hint": "rgba(0, 0, 0, 0.38)",
+                                      "icon": "rgba(0, 0, 0, 0.38)",
+                                      "lightDivider": "rgba(0, 0, 0, 0.075)",
+                                      "primary": "rgba(0, 0, 0, 0.87)",
+                                      "secondary": "rgba(0, 0, 0, 0.54)",
+                                    },
+                                  },
+                                },
+                                "text": Object {
+                                  "disabled": "rgba(0, 0, 0, 0.38)",
+                                  "divider": "rgba(0, 0, 0, 0.12)",
+                                  "hint": "rgba(0, 0, 0, 0.38)",
+                                  "icon": "rgba(0, 0, 0, 0.38)",
+                                  "lightDivider": "rgba(0, 0, 0, 0.075)",
+                                  "primary": "rgba(0, 0, 0, 0.87)",
+                                  "secondary": "rgba(0, 0, 0, 0.54)",
+                                },
+                                "type": "light",
+                              },
+                              "shadows": Array [
+                                "none",
+                                "0px 1px 3px 0px rgba(0, 0, 0, 0.2),0px 1px 1px 0px rgba(0, 0, 0, 0.14),0px 2px 1px -1px rgba(0, 0, 0, 0.12)",
+                                "0px 1px 5px 0px rgba(0, 0, 0, 0.2),0px 2px 2px 0px rgba(0, 0, 0, 0.14),0px 3px 1px -2px rgba(0, 0, 0, 0.12)",
+                                "0px 1px 8px 0px rgba(0, 0, 0, 0.2),0px 3px 4px 0px rgba(0, 0, 0, 0.14),0px 3px 3px -2px rgba(0, 0, 0, 0.12)",
+                                "0px 2px 4px -1px rgba(0, 0, 0, 0.2),0px 4px 5px 0px rgba(0, 0, 0, 0.14),0px 1px 10px 0px rgba(0, 0, 0, 0.12)",
+                                "0px 3px 5px -1px rgba(0, 0, 0, 0.2),0px 5px 8px 0px rgba(0, 0, 0, 0.14),0px 1px 14px 0px rgba(0, 0, 0, 0.12)",
+                                "0px 3px 5px -1px rgba(0, 0, 0, 0.2),0px 6px 10px 0px rgba(0, 0, 0, 0.14),0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
+                                "0px 4px 5px -2px rgba(0, 0, 0, 0.2),0px 7px 10px 1px rgba(0, 0, 0, 0.14),0px 2px 16px 1px rgba(0, 0, 0, 0.12)",
+                                "0px 5px 5px -3px rgba(0, 0, 0, 0.2),0px 8px 10px 1px rgba(0, 0, 0, 0.14),0px 3px 14px 2px rgba(0, 0, 0, 0.12)",
+                                "0px 5px 6px -3px rgba(0, 0, 0, 0.2),0px 9px 12px 1px rgba(0, 0, 0, 0.14),0px 3px 16px 2px rgba(0, 0, 0, 0.12)",
+                                "0px 6px 6px -3px rgba(0, 0, 0, 0.2),0px 10px 14px 1px rgba(0, 0, 0, 0.14),0px 4px 18px 3px rgba(0, 0, 0, 0.12)",
+                                "0px 6px 7px -4px rgba(0, 0, 0, 0.2),0px 11px 15px 1px rgba(0, 0, 0, 0.14),0px 4px 20px 3px rgba(0, 0, 0, 0.12)",
+                                "0px 7px 8px -4px rgba(0, 0, 0, 0.2),0px 12px 17px 2px rgba(0, 0, 0, 0.14),0px 5px 22px 4px rgba(0, 0, 0, 0.12)",
+                                "0px 7px 8px -4px rgba(0, 0, 0, 0.2),0px 13px 19px 2px rgba(0, 0, 0, 0.14),0px 5px 24px 4px rgba(0, 0, 0, 0.12)",
+                                "0px 7px 9px -4px rgba(0, 0, 0, 0.2),0px 14px 21px 2px rgba(0, 0, 0, 0.14),0px 5px 26px 4px rgba(0, 0, 0, 0.12)",
+                                "0px 8px 9px -5px rgba(0, 0, 0, 0.2),0px 15px 22px 2px rgba(0, 0, 0, 0.14),0px 6px 28px 5px rgba(0, 0, 0, 0.12)",
+                                "0px 8px 10px -5px rgba(0, 0, 0, 0.2),0px 16px 24px 2px rgba(0, 0, 0, 0.14),0px 6px 30px 5px rgba(0, 0, 0, 0.12)",
+                                "0px 8px 11px -5px rgba(0, 0, 0, 0.2),0px 17px 26px 2px rgba(0, 0, 0, 0.14),0px 6px 32px 5px rgba(0, 0, 0, 0.12)",
+                                "0px 9px 11px -5px rgba(0, 0, 0, 0.2),0px 18px 28px 2px rgba(0, 0, 0, 0.14),0px 7px 34px 6px rgba(0, 0, 0, 0.12)",
+                                "0px 9px 12px -6px rgba(0, 0, 0, 0.2),0px 19px 29px 2px rgba(0, 0, 0, 0.14),0px 7px 36px 6px rgba(0, 0, 0, 0.12)",
+                                "0px 10px 13px -6px rgba(0, 0, 0, 0.2),0px 20px 31px 3px rgba(0, 0, 0, 0.14),0px 8px 38px 7px rgba(0, 0, 0, 0.12)",
+                                "0px 10px 13px -6px rgba(0, 0, 0, 0.2),0px 21px 33px 3px rgba(0, 0, 0, 0.14),0px 8px 40px 7px rgba(0, 0, 0, 0.12)",
+                                "0px 10px 14px -6px rgba(0, 0, 0, 0.2),0px 22px 35px 3px rgba(0, 0, 0, 0.14),0px 8px 42px 7px rgba(0, 0, 0, 0.12)",
+                                "0px 11px 14px -7px rgba(0, 0, 0, 0.2),0px 23px 36px 3px rgba(0, 0, 0, 0.14),0px 9px 44px 8px rgba(0, 0, 0, 0.12)",
+                                "0px 11px 15px -7px rgba(0, 0, 0, 0.2),0px 24px 38px 3px rgba(0, 0, 0, 0.14),0px 9px 46px 8px rgba(0, 0, 0, 0.12)",
+                              ],
+                              "spacing": Object {
+                                "unit": 8,
+                              },
+                              "transitions": Object {
+                                "create": [Function],
+                                "duration": Object {
+                                  "complex": 375,
+                                  "enteringScreen": 225,
+                                  "leavingScreen": 195,
+                                  "short": 250,
+                                  "shorter": 200,
+                                  "shortest": 150,
+                                  "standard": 300,
+                                },
+                                "easing": Object {
+                                  "easeIn": "cubic-bezier(0.4, 0, 1, 1)",
+                                  "easeInOut": "cubic-bezier(0.4, 0, 0.2, 1)",
+                                  "easeOut": "cubic-bezier(0.0, 0, 0.2, 1)",
+                                  "sharp": "cubic-bezier(0.4, 0, 0.6, 1)",
+                                },
+                                "getAutoHeightDuration": [Function],
+                              },
+                              "typography": Object {
+                                "body1": Object {
+                                  "color": "rgba(0, 0, 0, 0.87)",
+                                  "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                  "fontSize": 14,
+                                  "fontWeight": 400,
+                                  "lineHeight": "20px",
+                                },
+                                "body2": Object {
+                                  "color": "rgba(0, 0, 0, 0.87)",
+                                  "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                  "fontSize": 14,
+                                  "fontWeight": 500,
+                                  "lineHeight": "24px",
+                                },
+                                "button": Object {
+                                  "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                  "fontSize": 14,
+                                  "fontWeight": 500,
+                                  "textTransform": "uppercase",
+                                },
+                                "caption": Object {
+                                  "color": "rgba(0, 0, 0, 0.54)",
+                                  "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                  "fontSize": 12,
+                                  "fontWeight": 400,
+                                  "lineHeight": 1,
+                                },
+                                "display1": Object {
+                                  "color": "rgba(0, 0, 0, 0.54)",
+                                  "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                  "fontSize": 34,
+                                  "fontWeight": 400,
+                                  "lineHeight": "40px",
+                                },
+                                "display2": Object {
+                                  "color": "rgba(0, 0, 0, 0.54)",
+                                  "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                  "fontSize": 45,
+                                  "fontWeight": 400,
+                                  "lineHeight": "48px",
+                                },
+                                "display3": Object {
+                                  "color": "rgba(0, 0, 0, 0.54)",
+                                  "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                  "fontSize": 56,
+                                  "fontWeight": 400,
+                                  "letterSpacing": "-.02em",
+                                  "lineHeight": 1.35,
+                                },
+                                "display4": Object {
+                                  "color": "rgba(0, 0, 0, 0.54)",
+                                  "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                  "fontSize": 112,
+                                  "fontWeight": 300,
+                                  "letterSpacing": "-.04em",
+                                  "lineHeight": 1,
+                                },
+                                "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                "fontSize": 14,
+                                "fontWeightLight": 300,
+                                "fontWeightMedium": 500,
+                                "fontWeightRegular": 400,
+                                "headline": Object {
+                                  "color": "rgba(0, 0, 0, 0.87)",
+                                  "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                  "fontSize": 24,
+                                  "fontWeight": 400,
+                                  "lineHeight": "32px",
+                                },
+                                "subheading": Object {
+                                  "color": "rgba(0, 0, 0, 0.87)",
+                                  "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                  "fontSize": 16,
+                                  "fontWeight": 400,
+                                  "lineHeight": "24px",
+                                },
+                                "title": Object {
+                                  "color": "rgba(0, 0, 0, 0.87)",
+                                  "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+                                  "fontSize": 21,
+                                  "fontWeight": 500,
+                                  "lineHeight": 1,
+                                },
+                              },
+                              "zIndex": Object {
+                                "appBar": 1100,
+                                "dialog": 1500,
+                                "dialogOverlay": 1400,
+                                "drawerOverlay": 1200,
+                                "layer": 2000,
+                                "menu": 1000,
+                                "mobileStepper": 900,
+                                "navDrawer": 1300,
+                                "popover": 2100,
+                                "snackbar": 2900,
+                                "tooltip": 3000,
+                              },
+                            }
+                          }
+                        >
+                          <a
+                            className="sc-htpNat lkKYwx"
+                            href="https://google.com"
+                          >
+                            https://google.com
+                          </a>
+                        </styled.a>
+                      </withTheme(styled.a)>
+                    </p>
+                  </Typography>
+                </withStyles(Typography)>
+              </div>
+            </ListItemText>
+          </withStyles(ListItemText)>
+        </li>
+        <withStyles(ListItemSecondaryAction)>
+          <ListItemSecondaryAction
+            classes={
+              Object {
+                "root": "MuiListItemSecondaryAction-root-40",
+              }
+            }
+          >
+            <div
+              className="MuiListItemSecondaryAction-root-40"
+            >
+              <branch(withState(withState(withHandlers(Component))))
+                actions={Array []}
+                id="2"
+              >
+                <Nothing
+                  actions={Array []}
+                  id="2"
+                />
+              </branch(withState(withState(withHandlers(Component))))>
+            </div>
+          </ListItemSecondaryAction>
+        </withStyles(ListItemSecondaryAction)>
+      </div>
+    </ListItem>
+  </withStyles(ListItem)>
+</Bookmark>
+`;

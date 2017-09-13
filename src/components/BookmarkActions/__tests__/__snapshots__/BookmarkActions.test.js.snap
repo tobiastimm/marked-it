@@ -1,0 +1,365 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: BookmarkActions Basic rendering should render a menu with actions 1`] = `
+<branch(withState(withState(withHandlers(Component))))
+  actions={
+    Array [
+      Object {
+        "id": "2",
+        "onClick": [Function],
+        "title": "My Action",
+      },
+    ]
+  }
+  id="1"
+>
+  <withState(withState(withHandlers(Component)))
+    actions={
+      Array [
+        Object {
+          "id": "2",
+          "onClick": [Function],
+          "title": "My Action",
+        },
+      ]
+    }
+    id="1"
+  >
+    <withState(withHandlers(Component))
+      actions={
+        Array [
+          Object {
+            "id": "2",
+            "onClick": [Function],
+            "title": "My Action",
+          },
+        ]
+      }
+      id="1"
+      isOpen={false}
+      toggleMenu={[Function]}
+    >
+      <withHandlers(Component)
+        actions={
+          Array [
+            Object {
+              "id": "2",
+              "onClick": [Function],
+              "title": "My Action",
+            },
+          ]
+        }
+        id="1"
+        isOpen={false}
+        setAnchorEl={[Function]}
+        toggleMenu={[Function]}
+      >
+        <Component
+          actions={
+            Array [
+              Object {
+                "id": "2",
+                "onClick": [Function],
+                "title": "My Action",
+              },
+            ]
+          }
+          closeMenu={[Function]}
+          id="1"
+          isOpen={false}
+          openMenu={[Function]}
+          setAnchorEl={[Function]}
+          toggleMenu={[Function]}
+        >
+          <styled.div>
+            <div
+              className="sc-bdVaJa bDWFJH"
+            >
+              <withStyles(IconButton)
+                aria-haspopup="true"
+                aria-label="More"
+                aria-owns={null}
+                onClick={[Function]}
+              >
+                <IconButton
+                  aria-haspopup="true"
+                  aria-label="More"
+                  aria-owns={null}
+                  classes={
+                    Object {
+                      "colorAccent": "MuiIconButton-colorAccent-3",
+                      "colorContrast": "MuiIconButton-colorContrast-4",
+                      "colorInherit": "MuiIconButton-colorInherit-6",
+                      "colorPrimary": "MuiIconButton-colorPrimary-5",
+                      "disabled": "MuiIconButton-disabled-2",
+                      "icon": "MuiIconButton-icon-8",
+                      "keyboardFocused": "MuiIconButton-keyboardFocused-9",
+                      "label": "MuiIconButton-label-7",
+                      "root": "MuiIconButton-root-1",
+                    }
+                  }
+                  color="default"
+                  disableRipple={false}
+                  disabled={false}
+                  onClick={[Function]}
+                >
+                  <withStyles(ButtonBase)
+                    aria-haspopup="true"
+                    aria-label="More"
+                    aria-owns={null}
+                    centerRipple={true}
+                    className="MuiIconButton-root-1"
+                    disableRipple={false}
+                    disabled={false}
+                    keyboardFocusedClassName="MuiIconButton-keyboardFocused-9"
+                    onClick={[Function]}
+                  >
+                    <ButtonBase
+                      aria-haspopup="true"
+                      aria-label="More"
+                      aria-owns={null}
+                      centerRipple={true}
+                      className="MuiIconButton-root-1"
+                      classes={
+                        Object {
+                          "disabled": "MuiButtonBase-disabled-11",
+                          "root": "MuiButtonBase-root-10",
+                        }
+                      }
+                      disableRipple={false}
+                      disabled={false}
+                      focusRipple={false}
+                      keyboardFocusedClassName="MuiIconButton-keyboardFocused-9"
+                      onClick={[Function]}
+                      tabIndex="0"
+                      type="button"
+                    >
+                      <button
+                        aria-haspopup="true"
+                        aria-label="More"
+                        aria-owns={null}
+                        className="MuiButtonBase-root-10 MuiIconButton-root-1"
+                        disabled={false}
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        onKeyUp={[Function]}
+                        onMouseDown={[Function]}
+                        onMouseLeave={[Function]}
+                        onMouseUp={[Function]}
+                        onTouchEnd={[Function]}
+                        onTouchStart={[Function]}
+                        role="button"
+                        tabIndex="0"
+                        type="button"
+                      >
+                        <span
+                          className="MuiIconButton-label-7"
+                        >
+                          <pure(MoreVert)>
+                            <withStyles(SvgIcon)>
+                              <SvgIcon
+                                classes={
+                                  Object {
+                                    "root": "MuiSvgIcon-root-12",
+                                  }
+                                }
+                                viewBox="0 0 24 24"
+                              >
+                                <svg
+                                  aria-hidden="true"
+                                  className="MuiSvgIcon-root-12"
+                                  focusable={false}
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                                  />
+                                </svg>
+                              </SvgIcon>
+                            </withStyles(SvgIcon)>
+                          </pure(MoreVert)>
+                        </span>
+                        <withStyles(TouchRipple)
+                          center={true}
+                          innerRef={[Function]}
+                        >
+                          <TouchRipple
+                            center={true}
+                            classes={
+                              Object {
+                                "0%": "%",
+                                "100%": "00%",
+                                "50%": "0%",
+                                "ripple": "MuiTouchRipple-ripple-17",
+                                "rippleFast": "MuiTouchRipple-rippleFast-19",
+                                "rippleVisible": "MuiTouchRipple-rippleVisible-18",
+                                "root": "MuiTouchRipple-root-13",
+                                "wrapper": "MuiTouchRipple-wrapper-14",
+                                "wrapperLeaving": "MuiTouchRipple-wrapperLeaving-15",
+                                "wrapperPulsating": "MuiTouchRipple-wrapperPulsating-16",
+                              }
+                            }
+                          >
+                            <TransitionGroup
+                              childFactory={[Function]}
+                              className="MuiTouchRipple-root-13"
+                              component="span"
+                              enter={true}
+                              exit={true}
+                            >
+                              <span
+                                className="MuiTouchRipple-root-13"
+                              />
+                            </TransitionGroup>
+                          </TouchRipple>
+                        </withStyles(TouchRipple)>
+                      </button>
+                    </ButtonBase>
+                  </withStyles(ButtonBase)>
+                </IconButton>
+              </withStyles(IconButton)>
+              ;
+              <withStyles(Menu)
+                MenuListProps={
+                  Object {
+                    "style": Object {
+                      "width": 200,
+                    },
+                  }
+                }
+                id="1_menu"
+                onRequestClose={[Function]}
+                open={false}
+                style={
+                  Object {
+                    "maxHeight": 216,
+                  }
+                }
+              >
+                <Menu
+                  MenuListProps={
+                    Object {
+                      "style": Object {
+                        "width": 200,
+                      },
+                    }
+                  }
+                  classes={
+                    Object {
+                      "root": "MuiMenu-root-20",
+                    }
+                  }
+                  id="1_menu"
+                  onRequestClose={[Function]}
+                  open={false}
+                  style={
+                    Object {
+                      "maxHeight": 216,
+                    }
+                  }
+                  transitionDuration="auto"
+                >
+                  <withStyles(Popover)
+                    className="MuiMenu-root-20"
+                    getContentAnchorEl={[Function]}
+                    id="1_menu"
+                    onEnter={[Function]}
+                    onRequestClose={[Function]}
+                    open={false}
+                    style={
+                      Object {
+                        "maxHeight": 216,
+                      }
+                    }
+                    transitionDuration="auto"
+                  >
+                    <Popover
+                      anchorOrigin={
+                        Object {
+                          "horizontal": "left",
+                          "vertical": "top",
+                        }
+                      }
+                      className="MuiMenu-root-20"
+                      classes={
+                        Object {
+                          ".MuiPopover-paper-21:focus": "MuiPopover-paper-21:focus",
+                          "paper": "MuiPopover-paper-21",
+                        }
+                      }
+                      elevation={8}
+                      getContentAnchorEl={[Function]}
+                      id="1_menu"
+                      modal={true}
+                      onEnter={[Function]}
+                      onRequestClose={[Function]}
+                      open={false}
+                      style={
+                        Object {
+                          "maxHeight": 216,
+                        }
+                      }
+                      transformOrigin={
+                        Object {
+                          "horizontal": "left",
+                          "vertical": "top",
+                        }
+                      }
+                      transitionDuration="auto"
+                    >
+                      <withStyles(Modal)
+                        backdropInvisible={true}
+                        onRequestClose={[Function]}
+                        show={false}
+                      >
+                        <Modal
+                          backdropComponent={[Function]}
+                          backdropInvisible={true}
+                          backdropTransitionDuration={300}
+                          classes={
+                            Object {
+                              "hidden": "MuiModal-hidden-23",
+                              "root": "MuiModal-root-22",
+                            }
+                          }
+                          disableBackdrop={false}
+                          ignoreBackdropClick={false}
+                          ignoreEscapeKeyUp={false}
+                          keepMounted={false}
+                          modalManager={
+                            Object {
+                              "add": [Function],
+                              "isTopModal": [Function],
+                              "remove": [Function],
+                            }
+                          }
+                          onRequestClose={[Function]}
+                          show={false}
+                        />
+                      </withStyles(Modal)>
+                    </Popover>
+                  </withStyles(Popover)>
+                </Menu>
+              </withStyles(Menu)>
+            </div>
+          </styled.div>
+        </Component>
+      </withHandlers(Component)>
+    </withState(withHandlers(Component))>
+  </withState(withState(withHandlers(Component)))>
+</branch(withState(withState(withHandlers(Component))))>
+`;
+
+exports[`Component: BookmarkActions Basic rendering should render a menu, without actions 1`] = `
+<branch(withState(withState(withHandlers(Component))))
+  actions={Array []}
+  id="1"
+>
+  <Nothing
+    actions={Array []}
+    id="1"
+  />
+</branch(withState(withState(withHandlers(Component))))>
+`;
