@@ -14,16 +14,15 @@ const Wrapper = withTheme(styled.div`
   width: 100%;
 `);
 
-const Layout = ({ children }) =>
+const Layout = ({ children }) => (
   <MuiThemeProvider theme={Theme}>
     <Wrapper>
       <GlobalStyles />
-      <Header/>
-      <Content>
-        {children}
-      </Content>
+      <Header />
+      <Content>{children}</Content>
     </Wrapper>
-  </MuiThemeProvider>;
+  </MuiThemeProvider>
+);
 
 Layout.propTyes = {
   children: PropTypes.array

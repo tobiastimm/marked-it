@@ -34,7 +34,7 @@ const enhance = compose(
 );
 
 const BookmarkActions = conditional(
-  enhance(({ id, isOpen, openMenu, closeMenu, anchorEl, actions }) =>
+  enhance(({ id, isOpen, openMenu, closeMenu, anchorEl, actions }) => (
     <Wrapper>
       <IconButton
         aria-label="More"
@@ -44,7 +44,7 @@ const BookmarkActions = conditional(
       >
         <MoreVertIcon />
       </IconButton>;
-      {!!actions.length &&
+      {!!actions.length && (
         <Menu
           id={`${id}_menu`}
           open={isOpen}
@@ -57,14 +57,15 @@ const BookmarkActions = conditional(
             }
           }}
         >
-          {actions.map(action =>
+          {actions.map(action => (
             <MenuItem key={action.id} onClick={action.onClick}>
               {action.title}
             </MenuItem>
-          )}
-        </Menu>}
+          ))}
+        </Menu>
+      )}
     </Wrapper>
-  )
+  ))
 );
 
 BookmarkActions.propTypes = {

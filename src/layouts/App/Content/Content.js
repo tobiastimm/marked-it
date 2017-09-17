@@ -16,10 +16,11 @@ const Wrapper = styled.div`
   position: fixed;
 `;
 
-const Content = () =>
+const Content = () => (
   <Wrapper>
     <EntriesContainer />
     <FolderContainer />
-  </Wrapper>;
+  </Wrapper>
+);
 
 export default Content;

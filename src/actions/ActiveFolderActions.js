@@ -1,4 +1,7 @@
-import { SET_ACTIVE_FOLDER, FETCH_ACTIVE_FOLDER } from './ActiveFolderActionTypes';
+import {
+  SET_ACTIVE_FOLDER,
+  FETCH_ACTIVE_FOLDER
+} from './ActiveFolderActionTypes';
 
 const setActiveFolder = (id, title, entries) => ({
   type: SET_ACTIVE_FOLDER,
@@ -9,7 +12,7 @@ const setActiveFolder = (id, title, entries) => ({
   }
 });
 
-const fetchActiveFolder = (id) => ({
+const fetchActiveFolder = id => ({
   type: FETCH_ACTIVE_FOLDER,
   payload: {
     id

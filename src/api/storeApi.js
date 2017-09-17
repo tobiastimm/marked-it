@@ -1,50 +1,44 @@
 import { getBookmarksForTree, getBookmarkFolders } from './bookmarkApi';
 
+const saveState = (state, delay = 1000) => {
+  let pendingState = state;
+
+  const timerId = window.setTimeout(() => {
+    chrome.storage.sync.set(pendingState, () => {
+      window.clearTimeout(timerId);
+      pendingState = null;
+    });
+  }, delay);
+};
+
 const getLocalState = () =>
   new Promise((resolve, reject) => {
     chrome.storage.local.get('state', obj => {
       const { state } = obj;
       try {
+        let settingsState = {};
         if (state) {
-          resolve(JSON.parse(state));
+          settingsState = JSON.parse(state);
         } else {
-          getBookmarkFolders().then(entries => {
-            getBookmarksForTree(entries.children[0].id).then(activeFolder => {
-              const initialState = {
-                activeFolder: {
-                  id: activeFolder.id,
-                  title: activeFolder.title,
-                  entries: activeFolder.children
-                },
-                entries: entries.children
-              };
-              resolve(initialState);
-            });
-          });
+          settingsState = {};
         }
+        getBookmarkFolders().then(entries => {
+          getBookmarksForTree(entries.children[0].id).then(activeFolder => {
+            const bookmarksState = {
+              activeFolder: {
+                id: activeFolder.id,
+                title: activeFolder.title,
+                entries: activeFolder.children
+              },
+              entries: entries.children
+            };
+            resolve({ ...settingsState, ...bookmarksState });
+          });
+        });
       } catch (error) {
         reject(error);
       }
     });
   });
-
-const saveState = (delay = 1000) => {
-  let pendingState;
-  let timerId;
-
-  return {
-    set(state) {
-      if (pendingState === null) {
-        timerId = window.setTimeout(() => {
-          chrome.storage.sync.set(pendingState, () => {
-            window.clearTimeout(timerId);
-            pendingState = null;
-          });
-        }, delay);
-      }
-      pendingState = state;
-    }
-  };
-};
 
 export { getLocalState, saveState };

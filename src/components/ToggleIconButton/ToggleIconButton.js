@@ -5,10 +5,11 @@ import IconButton from 'material-ui/IconButton';
 const withToggle = (toggle, OnIcon, OffIcon) =>
   toggle ? <OnIcon /> : <OffIcon />;
 
-const ToggleIconButton = ({ toggle, onIcon, offIcon, onClick }) =>
+const ToggleIconButton = ({ toggle, onIcon, offIcon, onClick }) => (
   <IconButton onClick={onClick}>
     {withToggle(toggle, onIcon, offIcon)}
-  </IconButton>;
+  </IconButton>
+);
 
 ToggleIconButton.propTypes = {
   toggle: PropTypes.bool.isRequired,

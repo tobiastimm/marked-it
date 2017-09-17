@@ -30,7 +30,7 @@ const FoldersList = withTheme(styled(List)`
     darken(0.1, props.theme.palette.background.paper)};
 `);
 
-const FolderContainer = ({ activeFolder }) =>
+const FolderContainer = ({ activeFolder }) => (
   <Wrapper>
     <FoldersList dense>
       {activeFolder.entries.map(
@@ -39,7 +39,8 @@ const FolderContainer = ({ activeFolder }) =>
           withDivider(entry, index === activeFolder.entries.length - 1)
       )}
     </FoldersList>
-  </Wrapper>;
+  </Wrapper>
+);
 
 FolderContainer.propTypes = {
   activeFolder: PropTypes.shape({

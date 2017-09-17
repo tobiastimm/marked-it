@@ -12,7 +12,7 @@ const media = Object.keys(sizes).reduce((accumulator, label) => {
   // eslint-disable-next-line no-param-reassign
   accumulator[label] = (...args) => css`
     @media (max-width: ${emSize}em) {
-      ${css(...args)}
+      ${css(...args)};
     }
   `;
   return accumulator;

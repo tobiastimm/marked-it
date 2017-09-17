@@ -1,5 +1,5 @@
 import { createMuiTheme } from 'material-ui/styles';
-import createPalette from 'material-ui/styles/palette';
+import createPalette from 'material-ui/styles/createPalette';
 
 const DarkTheme = createMuiTheme({
   palette: createPalette({

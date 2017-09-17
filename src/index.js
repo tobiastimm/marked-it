@@ -6,7 +6,7 @@ import rootSaga from './sagas';
 import configureStore from './config/configureStore';
 import App from './App';
 
-const store = configureStore();
+const store = configureStore({});
 store.runSaga(rootSaga);
 
 ReactDOM.render(

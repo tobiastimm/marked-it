@@ -23,18 +23,19 @@ const EntriesList = withTheme(styled(List)`
   background-color: ${props => props.theme.palette.background.paper};
 `);
 
-const EntriesContainer = ({ entries, setActiveFolder }) =>
+const EntriesContainer = ({ entries, setActiveFolder }) => (
   <Wrapper>
     <EntriesList>
-      {entries.map(entry =>
+      {entries.map(entry => (
         <BookmarkFolder
           key={entry.id}
           setActiveFolder={setActiveFolder}
           {...entry}
         />
-      )}
+      ))}
     </EntriesList>
-  </Wrapper>;
+  </Wrapper>
+);
 
 const mapStateToProps = state => ({ entries: state.entries });
 

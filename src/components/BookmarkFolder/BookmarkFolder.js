@@ -61,23 +61,31 @@ const BookmarkFolder = enhance(
           />
           <ListItemText primary={title} />
           <ListItemSecondaryAction>
-            {!!children.length &&
+            {!!children.length && (
               <ToggleIconButton
                 onClick={toggleExpand}
                 onIcon={KeyBoardArrowUp}
                 offIcon={KeyBoardArrowDown}
                 toggle={expand}
-              />}
+              />
+            )}
           </ListItemSecondaryAction>
         </ListItem>
-        {!!children.length &&
+        {!!children.length && (
           <Collapse in={expand} transitionDuration={'auto'} unmountOnExit>
             {children.map(
               entry =>
-                !!entry.children &&
-                <BookmarkFolder indention={10} key={entry.id} {...entry} setActiveFolder={setActiveFolder} />
+                !!entry.children && (
+                  <BookmarkFolder
+                    indention={10}
+                    key={entry.id}
+                    {...entry}
+                    setActiveFolder={setActiveFolder}
+                  />
+                )
             )}
-          </Collapse>}
+          </Collapse>
+        )}
       </Wrapper>
     );
   }

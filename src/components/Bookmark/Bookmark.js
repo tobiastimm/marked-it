@@ -27,21 +27,18 @@ const BookmarkLink = withTheme(styled.a`
   hyphens: auto;
 `);
 
-const Bookmark = ({ id, title, url, actions }) =>
+const Bookmark = ({ id, title, url, actions }) => (
   <ListItem>
     <Favicon src={getFavicon(url)} imgProps={{ width: 16, height: 16 }} />
     <ListItemText
       primary={title}
-      secondary={
-        <BookmarkLink href={url}>
-          {url}
-        </BookmarkLink>
-      }
+      secondary={<BookmarkLink href={url}>{url}</BookmarkLink>}
     />
     <ListItemSecondaryAction>
       <BookmarkActions id={id} actions={actions} />
     </ListItemSecondaryAction>
-  </ListItem>;
+  </ListItem>
+);
 
 Bookmark.propTypes = {
   id: PropTypes.string.isRequired,

@@ -4,21 +4,25 @@ import AppBar from 'material-ui/AppBar';
 import Toolbar from 'material-ui/Toolbar';
 import Typography from 'material-ui/Typography';
 import styled from 'styled-components';
+import Search from '../../../components/Search';
 
 const Wrapper = styled.div`width: 100%;`;
+const Title = styled(Typography)`flex: 1;`;
+const SearchWrapper = styled.div`flex: 3;`;
 
-const Title = styled(Typography)`
-    flex: 1;
-`;
-const Header = () =>
+const Header = () => (
   <Wrapper>
     <AppBar position="fixed" color="default">
       <Toolbar>
         <Title type="title" color="inherit">
           Marked it!
         </Title>
+        <SearchWrapper>
+          <Search />
+        </SearchWrapper>
       </Toolbar>
     </AppBar>
-  </Wrapper>;
+  </Wrapper>
+);
 
 export default Header;

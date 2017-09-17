@@ -1,7 +1,9 @@
 import {
   getAllBookmarks,
   getBookmarkFolders,
-  getBookmarksForTree
+  getBookmarksForTree,
+  removeBookmark,
+  removeBookmarkFolder
 } from '../bookmarkApi';
 
 describe('Api: bookmark', () => {
@@ -89,5 +91,39 @@ describe('Api: bookmark', () => {
       expect(folder).toBeDefined();
       expect(folder.children.length).toBe(1);
     });
+  });
+
+  describe('removeBookmark', () => {
+    beforeAll(() => {
+      global.chrome = {
+        bookmarks: {
+          remove: jest.fn((id, callback) => callback())
+        }
+      };
+    });
+
+    it('should call chrome.bookmarks.remove method', async () => {
+      await removeBookmark('1');
+      expect(global.chrome.bookmarks.remove.mock.calls.length).toBe(1);
+    });
+
+    // TODO Integration test with chrome bookmarks
+  });
+
+  describe('removeBookmarkFolder', () => {
+    beforeAll(() => {
+      global.chrome = {
+        bookmarks: {
+          removeTree: jest.fn((id, callback) => callback())
+        }
+      };
+    });
+
+    it('should call chrome.bookmarks.removeTree method', async () => {
+      await removeBookmarkFolder('1');
+      expect(global.chrome.bookmarks.removeTree.mock.calls.length).toBe(1);
+    });
+
+    // TODO Integration test with chrome bookmarks
   });
 });

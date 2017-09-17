@@ -1,4 +1,5 @@
-import { applyMiddleware, createStore, combineReducers, compose } from 'redux';
+import { applyMiddleware, createStore, compose } from 'redux';
+
 import * as asyncInitialState from 'redux-async-initial-state';
 import createSagaMiddleware, { END } from 'redux-saga';
 
@@ -14,12 +15,10 @@ const loadState = () =>
 
 const configureStore = initialState => {
   const sagaMiddleWare = createSagaMiddleware();
-  const store = createStore(
-    reducer,
-    compose(
-      applyMiddleware(asyncInitialState.middleware(loadState), sagaMiddleWare)
-    )
+  const enhance = compose(
+    applyMiddleware(asyncInitialState.middleware(loadState), sagaMiddleWare)
   );
+  const store = createStore(reducer, initialState, enhance);
   store.runSaga = sagaMiddleWare.run;
   store.close = () => store.dispatch(END);
   return store;

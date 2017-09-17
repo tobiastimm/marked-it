@@ -31,4 +31,21 @@ const getBookmarksForTree = id =>
       resolve(folder);
     });
   });
-export { getAllBookmarks, getBookmarkFolders, getBookmarksForTree };
+
+const removeBookmark = id =>
+  new Promise(resolve => {
+    chrome.bookmarks.remove(id, result => resolve(result));
+  });
+
+const removeBookmarkFolder = id =>
+  new Promise(resolve => {
+    chrome.bookmarks.removeTree(id, result => resolve(result));
+  });
+
+export {
+  getAllBookmarks,
+  getBookmarkFolders,
+  getBookmarksForTree,
+  removeBookmark,
+  removeBookmarkFolder
+};
